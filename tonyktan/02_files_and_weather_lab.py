@@ -15,7 +15,7 @@ Hint: you've already seen this code!
 header = None
 data = []
 
-with open('data/drinks.csv', 'rb') as csvfile:
+with open('https://raw.githubusercontent.com/misrab/SG_DAT1/master/data/drinks.csv', 'rb') as csvfile:
     drinks = csv.reader(csvfile)
     index = 0
     for drink in drinks:
