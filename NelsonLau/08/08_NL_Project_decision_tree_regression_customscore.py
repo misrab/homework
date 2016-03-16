@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.cross_validation import cross_val_score
-from nl_utils import tscvsplit, trade_z_score
+from nl_utils import tscvsplit, trade_z_score_func, cross_val_custom_score
 import pdb
 
 if __name__ == '__main__':
@@ -21,10 +21,10 @@ if __name__ == '__main__':
 
     CROSS_VALIDATION_FOLDS = 4
 
-    num_feature_list = [2,3,4,5,8,15]
-    depth_list = range(1,8)
+    num_feature_list = [4,8,15]
+    depth_list = range(1,8) + range(8,21,2)
 
-    rmse_results = {}
+    z_results = {}
     for response in response_columns:
         for num_features in num_feature_list:
             feature_columns = all_feature_columns[:num_features]
@@ -34,18 +34,23 @@ if __name__ == '__main__':
                 regressor = DecisionTreeRegressor(max_depth = max_depth)
                 X = one_minute_dataframe[feature_columns]
                 y = one_minute_dataframe[response]
-                cross_val_sse_list = cross_val_score(regressor, X, y, scoring=trade_z_score) #cv=tscvsplit(one_minute_dataframe,CROSS_VALIDATION_FOLDS), n_jobs = 1)
-                pdb.set_trace()
-                if response not in rmse_results:
-                    rmse_results[response] = {num_features: {max_depth: np.mean([np.sqrt(x) for x in cross_val_sse_list])}}
+
+                # regressor.fit(X,y)
+                # trade_z_score_func(y, regressor.predict(X))
+
+                cross_val_z_list = cross_val_custom_score(regressor, X, y, tscvsplit(one_minute_dataframe,CROSS_VALIDATION_FOLDS), trade_z_score_func)
+
+                # cross_val_sse_list = cross_val_score(regressor, X, y, scoring=trade_z_score) #cv=tscvsplit(one_minute_dataframe,CROSS_VALIDATION_FOLDS), n_jobs = 1)
+                if response not in z_results:
+                    z_results[response] = {num_features: {max_depth: np.mean(cross_val_z_list)}}
                 else:
-                    if num_features not in rmse_results[response]:
-                        rmse_results[response][num_features] = {max_depth: np.mean([np.sqrt(x) for x in cross_val_sse_list])}
+                    if num_features not in z_results[response]:
+                        z_results[response][num_features] = {max_depth: np.mean(cross_val_z_list)}
                     else:
-                        rmse_results[response][num_features][max_depth] = np.mean([np.sqrt(x) for x in cross_val_sse_list])
+                        z_results[response][num_features][max_depth] = np.mean(cross_val_z_list)
     
-    print "response\tnum_features\tmax_depth\tRMSE"
+    print "response\tnum_features\tmax_depth\ttrade_z"
     for response in response_columns:
         for num_features in num_feature_list:
             for max_depth in depth_list:
-                print "%s\t%s\t\t%s\t\t%0.15f" % (response, num_features, max_depth, rmse_results[response][num_features][max_depth])
+                print "%s\t%s\t\t%s\t\t%0.15f" % (response, num_features, max_depth, z_results[response][num_features][max_depth])
