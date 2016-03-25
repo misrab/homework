@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",126,127,"Tim","Howard","Everton",6,"Goalkeeper",51,7,0.0354545454545,7.03545454545,1,0,0,0,5.1
+"3",351,352,"Asmir","Begovic","Chelsea",4,"Goalkeeper",50,6,0.881863275613,6.88186327561,1,0,0,0,5
+"6",103,104,"Scott","Dann","Crystal Palace",5,"Defender",51,1,6.23636363636,7.23636363636,0,1,0,0,5.1
+"7",6,7,"Héctor","Bellerín","Arsenal",1,"Defender",59,0,6.6375,6.6375,0,1,0,0,5.9
+"8",106,107,"Martin","Kelly","Crystal Palace",5,"Defender",43,0,6.0743006993,6.0743006993,0,1,0,0,4.3
+"10",107,108,"Damien","Delaney","Crystal Palace",5,"Defender",44,2,3.95870726496,5.95870726496,0,1,0,0,4.4
+"11",498,499,"Glen","Johnson","Stoke",15,"Defender",50,7,-1.1625,5.8375,0,1,0,0,5
+"16",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",86,8,-0.75,7.25,0,0,1,0,8.6
+"17",286,287,"Jonny","Howson","Norwich",12,"Midfielder",49,2,5.24277777778,7.24277777778,0,0,1,0,4.9
+"18",243,244,"Ander","Herrera","Man Utd",10,"Midfielder",66,4,2.25,6.25,0,0,1,0,6.6
+"19",140,141,"James","McCarthy","Everton",6,"Midfielder",48,3,3.05,6.05,0,0,1,0,4.8
+"20",537,538,"N'Golo","Kanté","Leicester",7,"Midfielder",50,3,2.60357142857,5.60357142857,0,0,1,0,5
+"26",441,442,"Odion","Ighalo","Watford",18,"Forward",54,5,0.85,5.85,0,0,0,1,5.4
+"27",169,170,"Jamie","Vardy","Leicester",7,"Forward",72,7,-1.35,5.65,0,0,0,1,7.2
+"28",349,350,"Harry","Kane","Spurs",14,"Forward",93,13,-7.8,5.2,0,0,0,1,9.3

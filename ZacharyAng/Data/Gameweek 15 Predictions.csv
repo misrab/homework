@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+351,352,Asmir,Begovic,Chelsea,4,Goalkeeper,50,0,4.33194444444,4.33194444444
+102,103,Wayne,Hennessey,Crystal Palace,5,Goalkeeper,40,3,1.03301282051,4.03301282051
+29,30,Bradley,Guzan,Aston Villa,2,Goalkeeper,44,2,1.82333333333,3.82333333333
+444,445,Boaz,Myhill,West Brom,19,Goalkeeper,48,2,1.7775,3.7775
+2,3,Petr,Cech,Arsenal,1,Goalkeeper,56,3,0.746111111111,3.74611111111
+426,427,Juan Carlos,Paredes,Watford,18,Defender,43,1,6.05,7.05
+106,107,Martin,Kelly,Crystal Palace,5,Defender,43,0,5.02538461538,5.02538461538
+326,327,Kyle,Walker,Spurs,14,Defender,50,2,2.75073815074,4.75073815074
+276,277,Sebastien,Bassong,Norwich,12,Defender,43,1,3.65014652015,4.65014652015
+282,283,Ryan,Bennett,Norwich,12,Defender,39,0,4.65014652015,4.65014652015
+59,60,Charlie,Daniels,Bournemouth,3,Defender,45,6,-1.4,4.6
+470,471,Aaron,Cresswell,West Ham,20,Defender,56,6,-1.62118055556,4.37881944444
+381,382,Sebastián,Coates,Sunderland,16,Defender,42,1,3.22163461538,4.22163461538
+107,108,Damien,Delaney,Crystal Palace,5,Defender,44,2,2.18788461538,4.18788461538
+324,325,Danny,Rose,Spurs,14,Defender,52,2,2.1825,4.1825
+237,238,Juan,Mata,Man Utd,10,Midfielder,88,3,4.38636363636,7.38636363636
+188,189,Raheem,Sterling,Man City,9,Midfielder,89,2,3.37916900093,5.37916900093
+186,187,Leiva,Lucas,Liverpool,8,Midfielder,44,1,4.25571808511,5.25571808511
+509,510,Jeremain,Lens,Sunderland,16,Midfielder,63,1,4.10555555556,5.10555555556
+14,15,Mesut,Özil,Arsenal,1,Midfielder,90,6,-0.961818181818,5.03818181818
+95,96,Victor,Moses,West Ham,20,Midfielder,52,1,3.88055555556,4.88055555556
+164,165,Andy,King,Leicester,7,Midfielder,42,1,3.85,4.85
+408,409,Nathan,Dyer,Leicester,7,Midfielder,47,0,4.8,4.8
+190,191,Philippe,Coutinho,Liverpool,8,Midfielder,83,0,4.72222222222,4.72222222222
+192,193,Emre,Can,Liverpool,8,Midfielder,53,0,4.65294030733,4.65294030733
+320,321,Graziano,Pellè,Southampton,13,Forward,85,2,3.71229066986,5.71229066986
+321,322,Juan Miguel,Jiménez López,Southampton,13,Forward,54,1,4.615,5.615
+440,441,Troy,Deeney,Watford,18,Forward,51,11,-5.46666666667,5.53333333333
+294,295,Lewis,Grabban,Bournemouth,3,Forward,44,2,3.3,5.3
+317,318,Shane,Long,Southampton,13,Forward,57,1,4.18804824561,5.18804824561
+441,442,Odion,Ighalo,Watford,18,Forward,56,10,-5.41923076923,4.58076923077
+318,319,Jay,Rodriguez,Southampton,13,Forward,65,0,4.51304824561,4.51304824561
+148,149,Romelu,Lukaku,Everton,6,Forward,87,8,-3.55,4.45
+150,151,Arouna,Koné,Everton,6,Forward,49,2,2.35,4.35
+170,171,Leonardo,Ulloa,Leicester,7,Forward,53,2,2.25,4.25

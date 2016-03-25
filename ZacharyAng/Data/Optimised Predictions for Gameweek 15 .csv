@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",351,352,"Asmir","Begovic","Chelsea",4,"Goalkeeper",50,0,4.33194444444,4.33194444444,1,0,0,0,5
+"2",102,103,"Wayne","Hennessey","Crystal Palace",5,"Goalkeeper",40,3,1.03301282051,4.03301282051,1,0,0,0,4
+"6",426,427,"Juan Carlos","Paredes","Watford",18,"Defender",43,1,6.05,7.05,0,1,0,0,4.3
+"7",106,107,"Martin","Kelly","Crystal Palace",5,"Defender",43,0,5.02538461538,5.02538461538,0,1,0,0,4.3
+"8",326,327,"Kyle","Walker","Spurs",14,"Defender",50,2,2.75073815074,4.75073815074,0,1,0,0,5
+"9",276,277,"Sebastien","Bassong","Norwich",12,"Defender",43,1,3.65014652015,4.65014652015,0,1,0,0,4.3
+"10",282,283,"Ryan","Bennett","Norwich",12,"Defender",39,0,4.65014652015,4.65014652015,0,1,0,0,3.9
+"16",237,238,"Juan","Mata","Man Utd",10,"Midfielder",88,3,4.38636363636,7.38636363636,0,0,1,0,8.8
+"17",188,189,"Raheem","Sterling","Man City",9,"Midfielder",89,2,3.37916900093,5.37916900093,0,0,1,0,8.9
+"18",186,187,"Leiva","Lucas","Liverpool",8,"Midfielder",44,1,4.25571808511,5.25571808511,0,0,1,0,4.4
+"19",509,510,"Jeremain","Lens","Sunderland",16,"Midfielder",63,1,4.10555555556,5.10555555556,0,0,1,0,6.3
+"20",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",90,6,-0.961818181818,5.03818181818,0,0,1,0,9
+"26",320,321,"Graziano","Pellè","Southampton",13,"Forward",85,2,3.71229066986,5.71229066986,0,0,0,1,8.5
+"27",321,322,"Juan Miguel","Jiménez López","Southampton",13,"Forward",54,1,4.615,5.615,0,0,0,1,5.4
+"28",440,441,"Troy","Deeney","Watford",18,"Forward",51,11,-5.46666666667,5.53333333333,0,0,0,1,5.1

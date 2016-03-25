@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",322,323,"Hugo","Lloris","Spurs",14,"Goalkeeper",51,2,5.17632173382,7.17632173382,1,0,0,0,5.1
+"2",151,152,"Kasper","Schmeichel","Leicester",7,"Goalkeeper",45,7,-0.0109401709402,6.98905982906,1,0,0,0,4.5
+"6",378,379,"Patrick","van Aanholt","Sunderland",16,"Defender",46,11,-3.85,7.15,0,1,0,0,4.6
+"7",326,327,"Kyle","Walker","Spurs",14,"Defender",52,2,4.71666666667,6.71666666667,0,1,0,0,5.2
+"8",4,5,"Per","Mertesacker","Arsenal",1,"Defender",53,1,5.38888888889,6.38888888889,0,1,0,0,5.3
+"9",211,212,"Bacary","Sagna","Man City",9,"Defender",55,9,-2.76666666667,6.23333333333,0,1,0,0,5.5
+"10",206,207,"Aleksandar","Kolarov","Man City",9,"Defender",65,0,5.85357142857,5.85357142857,0,1,0,0,6.5
+"16",137,138,"Ross","Barkley","Everton",6,"Midfielder",75,3,4.51428571429,7.51428571429,0,0,1,0,7.5
+"17",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",99,2,4.6,6.6,0,0,1,0,9.9
+"18",47,48,"Scott","Sinclair","Aston Villa",2,"Midfielder",44,0,6.15,6.15,0,0,1,0,4.4
+"19",459,460,"James","McClean","West Brom",19,"Midfielder",47,6,-0.15,5.85,0,0,1,0,4.7
+"20",414,415,"Matt","Grimes","Swansea",17,"Midfielder",42,0,5.85,5.85,0,0,1,0,4.2
+"26",221,222,"Sergio","Agüero","Man City",9,"Forward",131,2,3.95,5.95,0,0,0,1,13.1
+"27",460,461,"Victor","Anichebe","West Brom",19,"Forward",45,0,4.9,4.9,0,0,0,1,4.5
+"28",417,418,"Marvin","Emnes","Swansea",17,"Forward",41,0,4,4,0,0,0,1,4.1

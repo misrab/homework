@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",2,3,"Petr","Cech","Arsenal",1,"Goalkeeper",58,10,-3.37083333333,6.62916666667,1,0,0,0,5.8
+"2",297,298,"Fraser","Forster","Southampton",13,"Goalkeeper",48,6,0.56,6.56,1,0,0,0,4.8
+"6",79,80,"César","Azpilicueta","Chelsea",4,"Defender",57,2,5.40454545455,7.40454545455,0,1,0,0,5.7
+"7",3,4,"Laurent","Koscielny","Arsenal",1,"Defender",62,6,1.07787878788,7.07787878788,0,1,0,0,6.2
+"8",154,155,"Christian","Fuchs","Leicester",7,"Defender",47,6,0.454545454545,6.45454545455,0,1,0,0,4.7
+"9",301,302,"Jose","Fonte","Southampton",13,"Defender",53,8,-1.68712121212,6.31287878788,0,1,0,0,5.3
+"10",159,160,"Danny","Simpson","Leicester",7,"Defender",41,1,4.96742424242,5.96742424242,0,1,0,0,4.1
+"16",197,198,"Roberto","Firmino","Liverpool",8,"Midfielder",78,13,-6.40882352941,6.59117647059,0,0,1,0,7.8
+"17",542,543,"Vadis","Odjidja-Ofoe","Norwich",12,"Midfielder",49,0,6.15,6.15,0,0,1,0,4.9
+"18",526,527,"Robbie","Brady","Norwich",12,"Midfielder",54,2,4.15,6.15,0,0,1,0,5.4
+"19",345,346,"Aaron","Lennon","Everton",6,"Midfielder",56,8,-1.88125,6.11875,0,0,1,0,5.6
+"20",192,193,"Emre","Can","Liverpool",8,"Midfielder",53,2,3.8570855615,5.8570855615,0,0,1,0,5.3
+"26",221,222,"Sergio","Agüero","Man City",9,"Forward",133,6,3.05,9.05,0,0,0,1,13.3
+"27",249,250,"Wayne","Rooney","Man Utd",10,"Forward",100,5,3.2,8.2,0,0,0,1,10
+"28",169,170,"Jamie","Vardy","Leicester",7,"Forward",72,2,5.2,7.2,0,0,0,1,7.2

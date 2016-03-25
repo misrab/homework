@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+54,55,Artur,Boruc,Bournemouth,3,Goalkeeper,45,3,3.925,6.925
+352,353,Jack,Butland,Stoke,15,Goalkeeper,52,1,5.3681547619,6.3681547619
+2,3,Petr,Cech,Arsenal,1,Goalkeeper,58,3,3.24916666667,6.24916666667
+174,175,Simon,Mignolet,Liverpool,8,Goalkeeper,50,0,5.75597222222,5.75597222222
+225,226,David,de Gea,Man Utd,10,Goalkeeper,56,2,3.73097222222,5.73097222222
+154,155,Christian,Fuchs,Leicester,7,Defender,47,8,6.95,14.95
+79,80,César,Azpilicueta,Chelsea,4,Defender,57,6,6.375,12.375
+60,61,Adam,Smith,Bournemouth,3,Defender,41,2,8.95,10.95
+301,302,Jose,Fonte,Southampton,13,Defender,53,7,3.425,10.425
+378,379,Patrick,van Aanholt,Sunderland,16,Defender,46,9,-0.7,8.3
+10,11,Nacho,Monreal,Arsenal,1,Defender,60,2,3.33416666667,5.33416666667
+161,162,Robert,Huth,Leicester,7,Defender,43,6,-0.7,5.3
+3,4,Laurent,Koscielny,Arsenal,1,Defender,61,2,2.87583333333,4.87583333333
+360,361,Philipp,Wollscheid,Stoke,15,Defender,45,1,3.75,4.75
+498,499,Glen,Johnson,Stoke,15,Defender,53,1,3.71363636364,4.71363636364
+457,458,Claudio,Yacob,West Brom,19,Midfielder,44,3,4.39375,7.39375
+114,115,Mile,Jedinak,Crystal Palace,5,Midfielder,46,0,7.35,7.35
+18,19,Alex,Oxlade-Chamberlain,Arsenal,1,Midfielder,55,1,6.25,7.25
+456,457,Chris,Brunt,West Brom,19,Midfielder,52,0,7.05769230769,7.05769230769
+238,239,Marouane,Fellaini,Man Utd,10,Midfielder,62,1,5.95,6.95
+433,434,Almen,Abdi,Watford,18,Midfielder,47,1,5.65555555556,6.65555555556
+543,544,Yann,M'Vila,Sunderland,16,Midfielder,49,2,3.65,5.65
+388,389,Adam,Johnson,Sunderland,16,Midfielder,58,2,3.2,5.2
+137,138,Ross,Barkley,Everton,6,Midfielder,74,2,3.16197802198,5.16197802198
+455,456,James,Morrison,West Brom,19,Midfielder,46,0,5.05,5.05
+418,419,Modou,Barrow,Swansea,17,Forward,43,0,7.8,7.8
+349,350,Harry,Kane,Spurs,14,Forward,99,5,1.0,6.0
+249,250,Wayne,Rooney,Man Utd,10,Forward,99,2,3.7,5.7
+440,441,Troy,Deeney,Watford,18,Forward,52,6,-0.3125,5.6875
+200,201,Fabio,Borini,Sunderland,16,Forward,54,5,0.3875,5.3875
+391,392,Jermain,Defoe,Sunderland,16,Forward,51,2,3.15,5.15
+522,523,Jordan,Ayew,Aston Villa,2,Forward,55,2,3.0,5.0
+25,26,Olivier,Giroud,Arsenal,1,Forward,92,1,3.65,4.65
+221,222,Sergio,Agüero,Man City,9,Forward,132,12,-7.4,4.6
+272,273,Ayoze,Pérez Gutiérrez,Newcastle,11,Forward,51,1,3.3875,4.3875

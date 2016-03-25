@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",322,323,"Hugo","Lloris","Spurs",14,"Goalkeeper",50,8,-1.46666666667,6.53333333333,1,0,0,0,5
+"2",444,445,"Boaz","Myhill","West Brom",19,"Goalkeeper",46,8,-2.72222222222,5.27777777778,1,0,0,0,4.6
+"6",278,279,"Russell","Martin","Norwich",12,"Defender",46,-1,6.95,5.95,0,1,0,0,4.6
+"7",276,277,"Sebastien","Bassong","Norwich",12,"Defender",44,-1,6.16666666667,5.16666666667,0,1,0,0,4.4
+"8",10,11,"Nacho","Monreal","Arsenal",1,"Defender",55,6,-1.1,4.9,0,1,0,0,5.5
+"9",210,211,"Martín","Demichelis","Man City",9,"Defender",54,0,4.73333333333,4.73333333333,0,1,0,0,5.4
+"12",6,7,"Héctor","Bellerín","Arsenal",1,"Defender",56,10,-6,4,0,1,0,0,5.6
+"16",481,482,"Dimitri","Payet","West Ham",20,"Midfielder",78,7,1.15,8.15,0,0,1,0,7.8
+"17",543,544,"Yann","M'Vila","Sunderland",16,"Midfielder",50,2,6.03913043478,8.03913043478,0,0,1,0,5
+"18",312,313,"Dusan","Tadic","Southampton",13,"Midfielder",69,5,2.72,7.72,0,0,1,0,6.9
+"19",288,289,"Alexander","Tettey","Norwich",12,"Midfielder",44,2,5.3987012987,7.3987012987,0,0,1,0,4.4
+"20",237,238,"Juan","Mata","Man Utd",10,"Midfielder",87,1,6.1,7.1,0,0,1,0,8.7
+"26",221,222,"Sergio","Agüero","Man City",9,"Forward",132,0,13.6,13.6,0,0,0,1,13.2
+"27",320,321,"Graziano","Pellè","Southampton",13,"Forward",79,2,7.15,9.15,0,0,0,1,7.9
+"28",169,170,"Jamie","Vardy","Leicester",7,"Forward",63,13,-6.85,6.15,0,0,0,1,6.3

@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+2,3,Petr,Cech,Arsenal,1,Goalkeeper,56,3,3.82291666667,6.82291666667
+225,226,David,de Gea,Man Utd,10,Goalkeeper,55,6,-0.227083333333,5.77291666667
+352,353,Jack,Butland,Stoke,15,Goalkeeper,46,10,-5.01586538462,4.98413461538
+444,445,Boaz,Myhill,West Brom,19,Goalkeeper,47,1,3.48969017094,4.48969017094
+374,375,Costel,Pantilimon,Watford,18,Goalkeeper,48,3,0.899213980464,3.89921398046
+4,5,Per,Mertesacker,Arsenal,1,Defender,53,2,4.89172149123,6.89172149123
+3,4,Laurent,Koscielny,Arsenal,1,Defender,59,2,4.71979166667,6.71979166667
+154,155,Christian,Fuchs,Leicester,7,Defender,47,2,4.12088815789,6.12088815789
+62,63,Sylvain,Distin,Bournemouth,3,Defender,43,2,3.81363636364,5.81363636364
+357,358,Erik,Pieters,Stoke,15,Defender,49,6,-0.228070175439,5.77192982456
+498,499,Glen,Johnson,Stoke,15,Defender,50,5,0.621929824561,5.62192982456
+159,160,Danny,Simpson,Leicester,7,Defender,39,2,3.47922149123,5.47922149123
+6,7,Héctor,Bellerín,Arsenal,1,Defender,58,0,5.47026315789,5.47026315789
+10,11,Nacho,Monreal,Arsenal,1,Defender,58,2,3.47026315789,5.47026315789
+5,6,Gabriel Armando,de Abreu,Arsenal,1,Defender,49,0,5.153125,5.153125
+217,218,Jesús,Navas,Man City,9,Midfielder,64,3,6.0,9.0
+243,244,Ander,Herrera,Man Utd,10,Midfielder,66,1,6.45,7.45
+215,216,David,Silva,Man City,9,Midfielder,100,0,6.96666666667,6.96666666667
+284,285,Nathan,Redmond,Norwich,12,Midfielder,56,0,6.85,6.85
+308,309,Steven,Davis,Southampton,13,Midfielder,48,3,3.07102941176,6.07102941176
+89,90,Willian,Borges Da Silva,Chelsea,4,Midfielder,68,2,3.69166666667,5.69166666667
+188,189,Raheem,Sterling,Man City,9,Midfielder,89,3,2.65,5.65
+307,308,Morgan,Schneiderlin,Man Utd,10,Midfielder,52,0,5.61519607843,5.61519607843
+313,314,Sadio,Mané,Southampton,13,Midfielder,79,2,3.6,5.6
+406,407,Gylfi,Sigurdsson,Swansea,17,Midfielder,73,2,3.35833333333,5.35833333333
+221,222,Sergio,Agüero,Man City,9,Forward,131,0,15.384375,15.384375
+223,224,Wilfried,Bony,Man City,9,Forward,83,1,13.9899305556,14.9899305556
+320,321,Graziano,Pellè,Southampton,13,Forward,84,1,13.05,14.05
+148,149,Romelu,Lukaku,Everton,6,Forward,84,8,0.153425925926,8.15342592593
+541,542,Kelechi,Iheanacho,Man City,9,Forward,49,1,5.634375,6.634375
+321,322,Juan Miguel,Jiménez López,Southampton,13,Forward,54,1,5.5625,6.5625
+318,319,Jay,Rodriguez,Southampton,13,Forward,66,0,6.509375,6.509375
+169,170,Jamie,Vardy,Leicester,7,Forward,71,9,-2.53407407407,6.46592592593
+530,531,Rudy,Gestede,Aston Villa,2,Forward,58,1,4.8675,5.8675
+440,441,Troy,Deeney,Watford,18,Forward,51,8,-2.99783333333,5.00216666667

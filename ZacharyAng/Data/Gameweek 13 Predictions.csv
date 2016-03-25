@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+126,127,Tim,Howard,Everton,6,Goalkeeper,51,7,0.0354545454545,7.03545454545
+102,103,Wayne,Hennessey,Crystal Palace,5,Goalkeeper,39,2,4.965,6.965
+351,352,Asmir,Begovic,Chelsea,4,Goalkeeper,50,6,0.881863275613,6.88186327561
+394,395,Lukasz,Fabianski,Swansea,17,Goalkeeper,50,1,5.8298989899,6.8298989899
+151,152,Kasper,Schmeichel,Leicester,7,Goalkeeper,45,6,0.546168831169,6.54616883117
+103,104,Scott,Dann,Crystal Palace,5,Defender,51,1,6.23636363636,7.23636363636
+6,7,Héctor,Bellerín,Arsenal,1,Defender,59,0,6.6375,6.6375
+106,107,Martin,Kelly,Crystal Palace,5,Defender,43,0,6.0743006993,6.0743006993
+104,105,Joel,Ward,Crystal Palace,5,Defender,44,2,3.95870726496,5.95870726496
+107,108,Damien,Delaney,Crystal Palace,5,Defender,44,2,3.95870726496,5.95870726496
+498,499,Glen,Johnson,Stoke,15,Defender,50,7,-1.1625,5.8375
+10,11,Nacho,Monreal,Arsenal,1,Defender,58,1,4.75386363636,5.75386363636
+234,235,Marcos,Rojo,Man Utd,10,Defender,54,2,3.64191176471,5.64191176471
+227,228,Chris,Smalling,Man Utd,10,Defender,64,2,3.6175,5.6175
+159,160,Danny,Simpson,Leicester,7,Defender,39,10,-4.45746753247,5.54253246753
+14,15,Mesut,Özil,Arsenal,1,Midfielder,86,8,-0.75,7.25
+286,287,Jonny,Howson,Norwich,12,Midfielder,49,2,5.24277777778,7.24277777778
+243,244,Ander,Herrera,Man Utd,10,Midfielder,66,4,2.25,6.25
+140,141,James,McCarthy,Everton,6,Midfielder,48,3,3.05,6.05
+537,538,N'Golo,Kanté,Leicester,7,Midfielder,50,3,2.60357142857,5.60357142857
+111,112,Yannick,Bolasie,Crystal Palace,5,Midfielder,62,2,3.1525,5.1525
+410,411,Jonjo,Shelvey,Newcastle,11,Midfielder,54,11,-5.99055555556,5.00944444444
+526,527,Robbie,Brady,Norwich,12,Midfielder,54,2,2.86051587302,4.86051587302
+520,521,Manuel,Lanzini,West Ham,20,Midfielder,53,7,-2.2,4.8
+147,148,Gerard,Deulofeu,Everton,6,Midfielder,62,3,1.8,4.8
+441,442,Odion,Ighalo,Watford,18,Forward,54,5,0.85,5.85
+169,170,Jamie,Vardy,Leicester,7,Forward,72,7,-1.35,5.65
+349,350,Harry,Kane,Spurs,14,Forward,93,13,-7.8,5.2
+392,393,Steven,Fletcher,Sunderland,16,Forward,50,1,3.7,4.7
+150,151,Arouna,Koné,Everton,6,Forward,49,5,-0.85,4.15
+25,26,Olivier,Giroud,Arsenal,1,Forward,87,7,-2.95,4.05
+249,250,Wayne,Rooney,Man Utd,10,Forward,102,0,4.01666666667,4.01666666667
+223,224,Wilfried,Bony,Man City,9,Forward,84,0,3.86,3.86
+221,222,Sergio,Agüero,Man City,9,Forward,131,6,-2.55,3.45
+440,441,Troy,Deeney,Watford,18,Forward,51,6,-2.97368421053,3.02631578947

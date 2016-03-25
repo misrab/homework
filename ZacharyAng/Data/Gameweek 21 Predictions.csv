@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+322,323,Hugo,Lloris,Spurs,14,Goalkeeper,51,2,5.17632173382,7.17632173382
+151,152,Kasper,Schmeichel,Leicester,7,Goalkeeper,45,7,-0.0109401709402,6.98905982906
+2,3,Petr,Cech,Arsenal,1,Goalkeeper,57,2,3.89461538462,5.89461538462
+174,175,Simon,Mignolet,Liverpool,8,Goalkeeper,50,1,4.86382173382,5.86382173382
+29,30,Bradley,Guzan,Aston Villa,2,Goalkeeper,43,0,5.27666666667,5.27666666667
+378,379,Patrick,van Aanholt,Sunderland,16,Defender,46,11,-3.85,7.15
+326,327,Kyle,Walker,Spurs,14,Defender,52,2,4.71666666667,6.71666666667
+4,5,Per,Mertesacker,Arsenal,1,Defender,53,1,5.38888888889,6.38888888889
+211,212,Bacary,Sagna,Man City,9,Defender,55,9,-2.76666666667,6.23333333333
+206,207,Aleksandar,Kolarov,Man City,9,Defender,65,0,5.85357142857,5.85357142857
+212,213,Eliaquim,Mangala,Man City,9,Defender,53,0,5.40357142857,5.40357142857
+6,7,Héctor,Bellerín,Arsenal,1,Defender,60,1,4.13888888889,5.13888888889
+381,382,Sebastián,Coates,Sunderland,16,Defender,42,0,5.05,5.05
+327,328,Jan,Vertonghen,Spurs,14,Defender,55,2,2.95263157895,4.95263157895
+36,37,Alan,Hutton,Aston Villa,2,Defender,42,0,4.93,4.93
+137,138,Ross,Barkley,Everton,6,Midfielder,75,3,4.51428571429,7.51428571429
+14,15,Mesut,Özil,Arsenal,1,Midfielder,99,2,4.6,6.6
+47,48,Scott,Sinclair,Aston Villa,2,Midfielder,44,0,6.15,6.15
+459,460,James,McClean,West Brom,19,Midfielder,47,6,-0.15,5.85
+414,415,Matt,Grimes,Swansea,17,Midfielder,42,0,5.85,5.85
+345,346,Aaron,Lennon,Everton,6,Midfielder,56,0,5.76042097999,5.76042097999
+495,496,Bastian,Schweinsteiger,Man Utd,10,Midfielder,66,0,5.5,5.5
+43,44,Carles,Gil de Pareja Vicent,Aston Villa,2,Midfielder,47,3,2.3,5.3
+415,416,André,Ayew,Swansea,17,Midfielder,69,10,-4.86,5.14
+162,163,Riyad,Mahrez,Leicester,7,Midfielder,71,3,2.0,5.0
+221,222,Sergio,Agüero,Man City,9,Forward,131,2,3.95,5.95
+460,461,Victor,Anichebe,West Brom,19,Forward,45,0,4.9,4.9
+417,418,Marvin,Emnes,Swansea,17,Forward,41,0,4.0,4.0
+125,126,Marouane,Chamakh,Crystal Palace,5,Forward,47,1,2.41590909091,3.41590909091
+223,224,Wilfried,Bony,Man City,9,Forward,80,0,3.34424836601,3.34424836601
+418,419,Modou,Barrow,Swansea,17,Forward,43,2,1.31666666667,3.31666666667
+390,391,Connor,Wickham,Crystal Palace,5,Forward,55,1,2.12523448773,3.12523448773
+148,149,Romelu,Lukaku,Everton,6,Forward,93,2,1.0714395082,3.0714395082
+199,200,Rickie,Lambert,West Brom,19,Forward,53,0,3.05260780886,3.05260780886
+170,171,Leonardo,Ulloa,Leicester,7,Forward,53,1,1.95,2.95

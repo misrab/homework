@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",205,206,"Willy","Caballero","Man City",9,"Goalkeeper",48,0,6.96666666667,6.96666666667,1,0,0,0,4.8
+"2",225,226,"David","de Gea","Man Utd",10,"Goalkeeper",56,2,3.65333333333,5.65333333333,1,0,0,0,5.6
+"6",210,211,"Martín","Demichelis","Man City",9,"Defender",53,0,5.95,5.95,0,1,0,0,5.3
+"7",360,361,"Philipp","Wollscheid","Stoke",15,"Defender",44,8,-2.18416666667,5.81583333333,0,1,0,0,4.4
+"8",498,499,"Glen","Johnson","Stoke",15,"Defender",50,7,-1.28047208539,5.71952791461,0,1,0,0,5
+"9",103,104,"Scott","Dann","Crystal Palace",5,"Defender",52,6,-0.291749644381,5.70825035562,0,1,0,0,5.2
+"10",206,207,"Aleksandar","Kolarov","Man City",9,"Defender",63,0,5.29089068826,5.29089068826,0,1,0,0,6.3
+"16",137,138,"Ross","Barkley","Everton",6,"Midfielder",70,2,11.35,13.35,0,0,1,0,7
+"17",367,368,"Marko","Arnautovic","Stoke",15,"Midfielder",60,3,9.29444444444,12.2944444444,0,0,1,0,6
+"18",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",92,6,6.25,12.25,0,0,1,0,9.2
+"19",543,544,"Yann","M'Vila","Sunderland",16,"Midfielder",50,2,6.5,8.5,0,0,1,0,5
+"20",237,238,"Juan","Mata","Man Utd",10,"Midfielder",88,2,5.02601787102,7.02601787102,0,0,1,0,8.8
+"26",440,441,"Troy","Deeney","Watford",18,"Forward",51,2,5.3,7.3,0,0,0,1,5.1
+"27",349,350,"Harry","Kane","Spurs",14,"Forward",96,2,3.9,5.9,0,0,0,1,9.6
+"28",441,442,"Odion","Ighalo","Watford",18,"Forward",57,7,-1.5,5.5,0,0,0,1,5.7
