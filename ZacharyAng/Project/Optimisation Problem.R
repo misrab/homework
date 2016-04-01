@@ -1,4 +1,4 @@
-setwd("/Users/zachang/Desktop/Data_Science_Course/homework/ZacharyAng/Project")
+setwd("/Users/zachang/Desktop/Data_Science_Course/homework/ZacharyAng/Data")
 #load libraries
 library(lpSolve)
 library(stringr)
@@ -67,10 +67,10 @@ legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"
 
 ## See how many transfers I actually made 
 Indmat=c()
-for (i in 8:9){
+for (i in 8:25){
 	df1=read.csv(paste("Optimised Predictions for Gameweek",i,".csv"),header=T)
 	df2=read.csv(paste("Optimised Predictions for Gameweek",i+1,".csv"),header=T)
-	Indmat=append(Indmat,df1$id==df2$id)
+	Indmat=append(Indmat,df1 %in% df2)
 }
-Indmat=matrix(Indmat,nrow=19,byrow=T)
-15-rowSums(Indmat)
+Indmat=matrix(Indmat,nrow=18,byrow=T)
+14-rowSums(Indmat)
