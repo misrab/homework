@@ -6,6 +6,7 @@ library(plyr)
 library(httr)
 library(rjson)
 library(ggplot2)
+library(xkcd)
 # Read the Data in ## 
 
 fantasy_scores=c()
@@ -54,23 +55,26 @@ pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[whic
 fantasy_scores<-append(fantasy_scores,sum(pred_df$actual))
 }
 
+for (i in 8:26){
+pred_df<-read.csv(paste("Optimised Predictions for Gameweek",i,".csv"),header=T)
+pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[which(pred_df$actual==max(pred_df$actual))]*2
+fantasy_scores<-append(fantasy_scores,sum(pred_df$actual))
+}
 # Evaluating my results
 
 my_own_scores=c(91,69,43,52,40,74,43,62,73,71,40,75,43,25,69,41,63,38,55) # This is how I performed over GW8 to GW26
-average_scores=c(55,51,42,56,45,55,51,51,51,59,44,57,40,35,46,43,60,55,41) # 
+average_scores=c(55,51,42,56,45,55,51,51,51,59,44,57,40,35,46,43,60,55,41) # This is my 
 scores<-data.frame(cumsum(fantasy_scores),cumsum(my_own_scores),cumsum(average_scores),row.names=8:26)
-?data.frame
 plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1400),xlim=c(5,34))
 lines(8:26,cumsum(average_scores),lwd=3,col="magenta")
 lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")
 legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,lty=1,cex=0.65)
 
-## See how many transfers I actually made 
-Indmat=c()
-for (i in 8:25){
-	df1=read.csv(paste("Optimised Predictions for Gameweek",i,".csv"),header=T)
-	df2=read.csv(paste("Optimised Predictions for Gameweek",i+1,".csv"),header=T)
-	Indmat=append(Indmat,df1 %in% df2)
-}
-Indmat=matrix(Indmat,nrow=18,byrow=T)
-14-rowSums(Indmat)
+headers=c("fantasy_scores","my_own_scores","average_scores")
+f_scores = cumsum(fantasy_scores)
+o_scores = cumsum(my_own_scores)
+a_scores = cumsum(average_scores)
+y=data.frame(gameweek=8:26,fantasy_scores=f_scores,my_own_scores=o_scores,average_scores=a_scores)
+write.csv(y,file="Comparisons.csv")
+
+
