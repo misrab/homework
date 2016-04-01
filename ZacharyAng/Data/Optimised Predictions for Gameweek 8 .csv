@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",205,206,"Willy","Caballero","Man City",9,"Goalkeeper",49,0,3.65178571429,3.65178571429,1,0,0,0,4.9
+"2",29,30,"Bradley","Guzan","Aston Villa",2,"Goalkeeper",45,3,-0.00642857142857,2.99357142857,1,0,0,0,4.5
+"6",447,448,"Craig","Dawson","West Brom",19,"Defender",50,1,3.80539958408,4.80539958408,0,1,0,0,5
+"7",212,213,"Eliaquim","Mangala","Man City",9,"Defender",55,1,3.8,4.8,0,1,0,0,5.5
+"8",10,11,"Nacho","Monreal","Arsenal",1,"Defender",55,6,-1.3125,4.6875,0,1,0,0,5.5
+"10",206,207,"Aleksandar","Kolarov","Man City",9,"Defender",60,2,2.25,4.25,0,1,0,0,6
+"13",103,104,"Scott","Dann","Crystal Palace",5,"Defender",50,7,-3.40751748252,3.59248251748,0,1,0,0,5
+"16",13,14,"Theo","Walcott","Arsenal",1,"Midfielder",85,9,1.4506302521,10.4506302521,0,0,1,0,8.5
+"17",12,13,"Alexis","Sánchez","Arsenal",1,"Midfielder",110,16,-5.65294117647,10.3470588235,0,0,1,0,11
+"18",509,510,"Jeremain","Lens","Sunderland",16,"Midfielder",65,3,4.4527027027,7.4527027027,0,0,1,0,6.5
+"19",490,491,"Yohan","Cabaye","Crystal Palace",5,"Midfielder",65,14,-6.95,7.05,0,0,1,0,6.5
+"20",500,501,"Valon","Behrami","Watford",18,"Midfielder",45,0,7.00186950147,7.00186950147,0,0,1,0,4.5
+"26",530,531,"Rudy","Gestede","Aston Villa",2,"Forward",59,2,7.63571428571,9.63571428571,0,0,0,1,5.9
+"27",484,485,"Diafra","Sakho","West Ham",20,"Forward",65,2,7.12142857143,9.12142857143,0,0,0,1,6.5
+"28",169,170,"Jamie","Vardy","Leicester",7,"Forward",62,9,-1.025,7.975,0,0,0,1,6.2

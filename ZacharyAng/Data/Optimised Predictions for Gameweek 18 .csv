@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",252,253,"Robert","Elliot","Newcastle",11,"Goalkeeper",40,4,1.195,5.195,1,0,0,0,4
+"2",204,205,"Joe","Hart","Man City",9,"Goalkeeper",56,2,2.90166666667,4.90166666667,1,0,0,0,5.6
+"6",501,502,"Angelo","Ogbonna","West Ham",20,"Defender",49,1,5.95,6.95,0,1,0,0,4.9
+"7",255,256,"Fabricio","Coloccini","Newcastle",11,"Defender",45,2,4.59796626984,6.59796626984,0,1,0,0,4.5
+"8",103,104,"Scott","Dann","Crystal Palace",5,"Defender",53,6,0.352976190476,6.35297619048,0,1,0,0,5.3
+"9",397,398,"Ashley","Williams","Swansea",17,"Defender",48,9,-2.76523268398,6.23476731602,0,1,0,0,4.8
+"10",4,5,"Per","Mertesacker","Arsenal",1,"Defender",53,0,6.015,6.015,0,1,0,0,5.3
+"16",162,163,"Riyad","Mahrez","Leicester",7,"Midfielder",69,2,9.8,11.8,0,0,1,0,6.9
+"17",137,138,"Ross","Barkley","Everton",6,"Midfielder",74,2,8.6,10.6,0,0,1,0,7.4
+"18",191,192,"Jordon","Ibe","Liverpool",8,"Midfielder",46,0,5.12005952381,5.12005952381,0,0,1,0,4.6
+"19",216,217,"Gnegneri Yaya","Touré","Man City",9,"Midfielder",85,9,-4.15340909091,4.84659090909,0,0,1,0,8.5
+"20",217,218,"Jesús","Navas","Man City",9,"Midfielder",62,0,4.83409090909,4.83409090909,0,0,1,0,6.2
+"26",441,442,"Odion","Ighalo","Watford",18,"Forward",59,6,3.3,9.3,0,0,0,1,5.9
+"27",169,170,"Jamie","Vardy","Leicester",7,"Forward",76,2,5.65,7.65,0,0,0,1,7.6
+"28",25,26,"Olivier","Giroud","Arsenal",1,"Forward",90,2,5.45,7.45,0,0,0,1,9

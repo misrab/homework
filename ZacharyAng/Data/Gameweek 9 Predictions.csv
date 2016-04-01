@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+322,323,Hugo,Lloris,Spurs,14,Goalkeeper,50,8,-1.46666666667,6.53333333333
+444,445,Boaz,Myhill,West Brom,19,Goalkeeper,46,8,-2.72222222222,5.27777777778
+352,353,Jack,Butland,Stoke,15,Goalkeeper,45,6,-1.16547619048,4.83452380952
+205,206,Willy,Caballero,Man City,9,Goalkeeper,49,0,3.725,3.725
+76,77,Thibaut,Courtois,Chelsea,4,Goalkeeper,53,0,3.10227272727,3.10227272727
+278,279,Russell,Martin,Norwich,12,Defender,46,-1,6.95,5.95
+276,277,Sebastien,Bassong,Norwich,12,Defender,44,-1,6.16666666667,5.16666666667
+10,11,Nacho,Monreal,Arsenal,1,Defender,55,6,-1.1,4.9
+210,211,Martín,Demichelis,Man City,9,Defender,54,0,4.73333333333,4.73333333333
+277,278,Steven,Whittaker,Norwich,12,Defender,45,-1,5.57222222222,4.57222222222
+184,185,Andre,Wisdom,Norwich,12,Defender,43,0,4.22222222222,4.22222222222
+6,7,Héctor,Bellerín,Arsenal,1,Defender,56,10,-6.0,4.0
+282,283,Ryan,Bennett,Norwich,12,Defender,39,0,3.51222222222,3.51222222222
+78,79,Branislav,Ivanovic,Chelsea,4,Defender,67,0,3.5,3.5
+80,81,Gary,Cahill,Chelsea,4,Defender,64,0,3.36038961039,3.36038961039
+481,482,Dimitri,Payet,West Ham,20,Midfielder,78,7,1.15,8.15
+543,544,Yann,M'Vila,Sunderland,16,Midfielder,50,2,6.03913043478,8.03913043478
+312,313,Dusan,Tadic,Southampton,13,Midfielder,69,5,2.72,7.72
+288,289,Alexander,Tettey,Norwich,12,Midfielder,44,2,5.3987012987,7.3987012987
+237,238,Juan,Mata,Man Utd,10,Midfielder,87,1,6.1,7.1
+91,92,Nemanja,Matic,Chelsea,4,Midfielder,49,1,5.75625,6.75625
+240,241,Michael,Carrick,Man Utd,10,Midfielder,49,1,5.70877886416,6.70877886416
+313,314,Sadio,Mané,Southampton,13,Midfielder,78,2,4.5,6.5
+264,265,Jack,Colback,Newcastle,11,Midfielder,53,2,4.28269230769,6.28269230769
+337,338,Nacer,Chadli,Spurs,14,Midfielder,70,1,4.59026034564,5.59026034564
+221,222,Sergio,Agüero,Man City,9,Forward,132,0,13.6,13.6
+320,321,Graziano,Pellè,Southampton,13,Forward,79,2,7.15,9.15
+169,170,Jamie,Vardy,Leicester,7,Forward,63,13,-6.85,6.15
+441,442,Odion,Ighalo,Watford,18,Forward,51,2,3.56666666667,5.56666666667
+272,273,Ayoze,Pérez Gutiérrez,Newcastle,11,Forward,51,10,-5.21333333333,4.78666666667
+484,485,Diafra,Sakho,West Ham,20,Forward,66,2,2.28333333333,4.28333333333
+198,199,Daniel,Sturridge,Liverpool,8,Forward,104,0,4.23333333333,4.23333333333
+440,441,Troy,Deeney,Watford,18,Forward,53,2,1.88819444444,3.88819444444
+223,224,Wilfried,Bony,Man City,9,Forward,82,16,-12.3953661616,3.60463383838
+292,293,Cameron,Jerome,Norwich,12,Forward,48,1,2.56675802139,3.56675802139

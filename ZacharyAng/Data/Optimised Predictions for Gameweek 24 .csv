@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",297,298,"Fraser","Forster","Southampton",13,"Goalkeeper",48,12,-6.6,5.4,1,0,0,0,4.8
+"2",151,152,"Kasper","Schmeichel","Leicester",7,"Goalkeeper",45,6,-0.746666666667,5.25333333333,1,0,0,0,4.5
+"6",378,379,"Patrick","van Aanholt","Sunderland",16,"Defender",46,2,5.35,7.35,0,1,0,0,4.6
+"7",78,79,"Branislav","Ivanovic","Chelsea",4,"Defender",65,6,1.2,7.2,0,1,0,0,6.5
+"8",59,60,"Charlie","Daniels","Bournemouth",3,"Defender",45,8,-1.1,6.9,0,1,0,0,4.5
+"9",154,155,"Christian","Fuchs","Leicester",7,"Defender",47,7,-0.4625,6.5375,0,1,0,0,4.7
+"10",303,304,"Matt","Targett","Southampton",13,"Defender",37,1,5.45,6.45,0,1,0,0,3.7
+"16",286,287,"Jonny","Howson","Norwich",12,"Midfielder",49,2,6.56544117647,8.56544117647,0,0,1,0,4.9
+"17",18,19,"Alex","Oxlade-Chamberlain","Arsenal",1,"Midfielder",55,0,8.49473684211,8.49473684211,0,0,1,0,5.5
+"18",415,416,"André","Ayew","Swansea",17,"Midfielder",68,3,5.08214285714,8.08214285714,0,0,1,0,6.8
+"19",162,163,"Riyad","Mahrez","Leicester",7,"Midfielder",72,6,1.75098684211,7.75098684211,0,0,1,0,7.2
+"20",67,68,"Marc","Pugh","Bournemouth",3,"Midfielder",46,7,0.708333333333,7.70833333333,0,0,1,0,4.6
+"26",483,484,"Enner","Valencia","West Ham",20,"Forward",58,5,2.3625,7.3625,0,0,0,1,5.8
+"27",441,442,"Odion","Ighalo","Watford",18,"Forward",64,2,5.15,7.15,0,0,0,1,6.4
+"29",440,441,"Troy","Deeney","Watford",18,"Forward",52,2,4.75,6.75,0,0,0,1,5.2

@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",420,421,"Heurelho","Gomes","Watford",18,"Goalkeeper",45,6,0.121666666667,6.12166666667,1,0,0,0,4.5
+"3",352,353,"Jack","Butland","Stoke",15,"Goalkeeper",45,1,4.675,5.675,1,0,0,0,4.5
+"6",6,7,"Héctor","Bellerín","Arsenal",1,"Defender",56,2,4.59166666667,6.59166666667,0,1,0,0,5.6
+"8",447,448,"Craig","Dawson","West Brom",19,"Defender",50,6,0.0166666666667,6.01666666667,0,1,0,0,5
+"9",469,470,"James","Tomkins","West Ham",20,"Defender",50,2,3.5625,5.5625,0,1,0,0,5
+"10",230,231,"Jonny","Evans","West Brom",19,"Defender",48,6,-0.45,5.55,0,1,0,0,4.8
+"11",468,469,"Winston","Reid","West Ham",20,"Defender",50,0,5.3274122807,5.3274122807,0,1,0,0,5
+"16",496,497,"Georginio","Wijnaldum","Newcastle",11,"Midfielder",68,2,8.6,10.6,0,0,1,0,6.8
+"17",12,13,"Alexis","Sánchez","Arsenal",1,"Midfielder",111,2,7.25,9.25,0,0,1,0,11.1
+"18",477,478,"Cheikhou","Kouyaté","West Ham",20,"Midfielder",56,1,8.225,9.225,0,0,1,0,5.6
+"19",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",84,5,2.65,7.65,0,0,1,0,8.4
+"20",543,544,"Yann","M'Vila","Sunderland",16,"Midfielder",50,6,0.85,6.85,0,0,1,0,5
+"26",441,442,"Odion","Ighalo","Watford",18,"Forward",52,7,0.65,7.65,0,0,0,1,5.2
+"27",223,224,"Wilfried","Bony","Man City",9,"Forward",82,2,5.54422172031,7.54422172031,0,0,0,1,8.2
+"28",461,462,"Saido","Berahino","West Brom",19,"Forward",62,2,5.15,7.15,0,0,0,1,6.2

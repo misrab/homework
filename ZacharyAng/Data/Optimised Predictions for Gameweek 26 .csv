@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",204,205,"Joe","Hart","Man City",9,"Goalkeeper",55,1,4.33409090909,5.33409090909,1,0,0,0,5.5
+"3",225,226,"David","de Gea","Man Utd",10,"Goalkeeper",56,0,4.74806547619,4.74806547619,1,0,0,0,5.6
+"6",448,449,"Joleon","Lescott","Aston Villa",2,"Defender",46,-1,13.4,12.4,0,1,0,0,4.6
+"7",161,162,"Robert","Huth","Leicester",7,"Defender",43,1,9.9,10.9,0,1,0,0,4.3
+"8",301,302,"Jose","Fonte","Southampton",13,"Defender",53,7,0.65,7.65,0,1,0,0,5.3
+"9",300,301,"Ryan","Bertrand","Southampton",13,"Defender",53,6,1.1,7.1,0,1,0,0,5.3
+"10",333,334,"Kieran","Trippier","Spurs",14,"Defender",49,0,6.5,6.5,0,1,0,0,4.9
+"16",162,163,"Riyad","Mahrez","Leicester",7,"Midfielder",71,1,9.05,10.05,0,0,1,0,7.1
+"17",313,314,"Sadio","Mané","Southampton",13,"Midfielder",74,0,9.7,9.7,0,0,1,0,7.4
+"18",197,198,"Roberto","Firmino","Liverpool",8,"Midfielder",80,6,2.95,8.95,0,0,1,0,8
+"19",406,407,"Gylfi","Sigurdsson","Swansea",17,"Midfielder",70,2,6,8,0,0,1,0,7
+"20",264,265,"Jack","Colback","Newcastle",11,"Midfielder",52,4,1.12058823529,5.12058823529,0,0,1,0,5.2
+"26",391,392,"Jermain","Defoe","Sunderland",16,"Forward",52,2,4,6,0,0,0,1,5.2
+"27",441,442,"Odion","Ighalo","Watford",18,"Forward",64,2,3.15,5.15,0,0,0,1,6.4
+"28",440,441,"Troy","Deeney","Watford",18,"Forward",52,13,-8.25,4.75,0,0,0,1,5.2

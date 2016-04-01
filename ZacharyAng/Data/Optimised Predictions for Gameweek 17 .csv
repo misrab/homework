@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",351,352,"Asmir","Begovic","Chelsea",4,"Goalkeeper",50,0,4.74555555556,4.74555555556,1,0,0,0,5
+"3",352,353,"Jack","Butland","Stoke",15,"Goalkeeper",48,1,3.65770308123,4.65770308123,1,0,0,0,4.8
+"6",531,532,"Chancel","Mbemba","Newcastle",11,"Defender",49,2,5.6,7.6,0,1,0,0,4.9
+"7",255,256,"Fabricio","Coloccini","Newcastle",11,"Defender",45,9,-1.6,7.4,0,1,0,0,4.5
+"8",258,259,"Daryl","Janmaat","Newcastle",11,"Defender",49,2,5.2,7.2,0,1,0,0,4.9
+"10",81,82,"Kurt","Zouma","Chelsea",4,"Defender",54,2,4.8,6.8,0,1,0,0,5.4
+"11",498,499,"Glen","Johnson","Stoke",15,"Defender",50,1,5.28888888889,6.28888888889,0,1,0,0,5
+"16",162,163,"Riyad","Mahrez","Leicester",7,"Midfielder",68,15,-8.25,6.75,0,0,1,0,6.8
+"17",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",95,11,-5.15,5.85,0,0,1,0,9.5
+"18",285,286,"Wes","Hoolahan","Norwich",12,"Midfielder",49,3,2.15625,5.15625,0,0,1,0,4.9
+"19",481,482,"Dimitri","Payet","West Ham",20,"Midfielder",78,0,5.06945454545,5.06945454545,0,0,1,0,7.8
+"20",71,72,"Junior","Stanislas","Bournemouth",3,"Midfielder",42,3,2.06666666667,5.06666666667,0,0,1,0,4.2
+"26",320,321,"Graziano","Pellè","Southampton",13,"Forward",82,2,4.83333333333,6.83333333333,0,0,0,1,8.2
+"27",148,149,"Romelu","Lukaku","Everton",6,"Forward",90,6,0,6,0,0,0,1,9
+"28",51,52,"Gabriel","Agbonlahor","Aston Villa",2,"Forward",47,0,5.1,5.1,0,0,0,1,4.7

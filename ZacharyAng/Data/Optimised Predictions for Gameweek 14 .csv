@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",126,127,"Tim","Howard","Everton",6,"Goalkeeper",51,3,3.50178571429,6.50178571429,1,0,0,0,5.1
+"2",374,375,"Costel","Pantilimon","Watford",18,"Goalkeeper",48,8,-3.43883928571,4.56116071429,1,0,0,0,4.8
+"6",258,259,"Daryl","Janmaat","Newcastle",11,"Defender",49,3,4.31041666667,7.31041666667,0,1,0,0,4.9
+"7",230,231,"Jonny","Evans","West Brom",19,"Defender",48,4,3.06041666667,7.06041666667,0,1,0,0,4.8
+"8",357,358,"Erik","Pieters","Stoke",15,"Defender",49,0,6.82708333333,6.82708333333,0,1,0,0,4.9
+"9",451,452,"Gareth","McAuley","West Brom",19,"Defender",50,2,4.25708333333,6.25708333333,0,1,0,0,5
+"10",81,82,"Kurt","Zouma","Chelsea",4,"Defender",55,6,0.107083333333,6.10708333333,0,1,0,0,5.5
+"16",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",87,10,-2.3,7.7,0,0,1,0,8.7
+"17",69,70,"Eunan","O'Kane","Bournemouth",3,"Midfielder",43,0,7.04583333333,7.04583333333,0,0,1,0,4.3
+"18",312,313,"Dusan","Tadic","Southampton",13,"Midfielder",70,1,5.8,6.8,0,0,1,0,7
+"19",433,434,"Almen","Abdi","Watford",18,"Midfielder",47,2,4.39166666667,6.39166666667,0,0,1,0,4.7
+"20",137,138,"Ross","Barkley","Everton",6,"Midfielder",68,13,-6.96193181818,6.03806818182,0,0,1,0,6.8
+"26",169,170,"Jamie","Vardy","Leicester",7,"Forward",73,9,-1.65,7.35,0,0,0,1,7.3
+"27",349,350,"Harry","Kane","Spurs",14,"Forward",93,1,6.1,7.1,0,0,0,1,9.3
+"28",150,151,"Arouna","Koné","Everton",6,"Forward",48,2,4.5,6.5,0,0,0,1,4.8

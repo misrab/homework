@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",151,152,"Kasper","Schmeichel","Leicester",7,"Goalkeeper",45,1,4.83544871795,5.83544871795,1,0,0,0,4.5
+"2",464,465,"Adrián","San Miguel del Castillo","West Ham",20,"Goalkeeper",50,2,3.75866300366,5.75866300366,1,0,0,0,5
+"6",3,4,"Laurent","Koscielny","Arsenal",1,"Defender",59,15,-7.42,7.58,0,1,0,0,5.9
+"7",425,426,"Sebastian","Prödl","Watford",18,"Defender",45,0,5.77113095238,5.77113095238,0,1,0,0,4.5
+"8",300,301,"Ryan","Bertrand","Southampton",13,"Defender",53,11,-5.43857142857,5.56142857143,0,1,0,0,5.3
+"9",424,425,"Craig","Cathcart","Watford",18,"Defender",45,6,-0.461561355311,5.53843864469,0,1,0,0,4.5
+"11",377,378,"Billy","Jones","Sunderland",16,"Defender",44,-1,6.04821428571,5.04821428571,0,1,0,0,4.4
+"16",339,340,"Erik","Lamela","Spurs",14,"Midfielder",68,6,-0.25,5.75,0,0,1,0,6.8
+"17",14,15,"Mesut","Özil","Arsenal",1,"Midfielder",84,10,-4.7,5.3,0,0,1,0,8.4
+"18",347,348,"Bamidele","Alli","Spurs",14,"Midfielder",49,10,-4.85,5.15,0,0,1,0,4.9
+"19",190,191,"Philippe","Coutinho","Liverpool",8,"Midfielder",81,14,-9.23125,4.76875,0,0,1,0,8.1
+"20",196,197,"James","Milner","Liverpool",8,"Midfielder",67,2,2.41875,4.41875,0,0,1,0,6.7
+"26",349,350,"Harry","Kane","Spurs",14,"Forward",92,8,1.74952380952,9.74952380952,0,0,0,1,9.2
+"27",200,201,"Fabio","Borini","Sunderland",16,"Forward",54,0,8.54285714286,8.54285714286,0,0,0,1,5.4
+"28",223,224,"Wilfried","Bony","Man City",9,"Forward",82,2,4.05,6.05,0,0,0,1,8.2

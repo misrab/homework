@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+2,3,Petr,Cech,Arsenal,1,Goalkeeper,58,10,-3.37083333333,6.62916666667
+297,298,Fraser,Forster,Southampton,13,Goalkeeper,48,6,0.56,6.56
+151,152,Kasper,Schmeichel,Leicester,7,Goalkeeper,45,3,3.555,6.555
+487,488,Mark,Bunn,Aston Villa,2,Goalkeeper,43,7,-0.695833333333,6.30416666667
+445,446,Ben,Foster,West Brom,19,Goalkeeper,49,4,1.88797619048,5.88797619048
+79,80,César,Azpilicueta,Chelsea,4,Defender,57,2,5.40454545455,7.40454545455
+3,4,Laurent,Koscielny,Arsenal,1,Defender,62,6,1.07787878788,7.07787878788
+154,155,Christian,Fuchs,Leicester,7,Defender,47,6,0.454545454545,6.45454545455
+301,302,Jose,Fonte,Southampton,13,Defender,53,8,-1.68712121212,6.31287878788
+159,160,Danny,Simpson,Leicester,7,Defender,41,1,4.96742424242,5.96742424242
+210,211,Martín,Demichelis,Man City,9,Defender,53,1,4.79769230769,5.79769230769
+81,82,Kurt,Zouma,Chelsea,4,Defender,54,1,4.58269230769,5.58269230769
+77,78,John,Terry,Chelsea,4,Defender,66,2,3.56223776224,5.56223776224
+161,162,Robert,Huth,Leicester,7,Defender,43,16,-10.4825757576,5.51742424242
+78,79,Branislav,Ivanovic,Chelsea,4,Defender,65,2,3.5,5.5
+197,198,Roberto,Firmino,Liverpool,8,Midfielder,78,13,-6.40882352941,6.59117647059
+542,543,Vadis,Odjidja-Ofoe,Norwich,12,Midfielder,49,0,6.15,6.15
+526,527,Robbie,Brady,Norwich,12,Midfielder,54,2,4.15,6.15
+345,346,Aaron,Lennon,Everton,6,Midfielder,56,8,-1.88125,6.11875
+192,193,Emre,Can,Liverpool,8,Midfielder,53,2,3.8570855615,5.8570855615
+287,288,Graham,Dorrans,Norwich,12,Midfielder,44,0,5.75,5.75
+455,456,James,Morrison,West Brom,19,Midfielder,46,0,5.61875,5.61875
+286,287,Jonny,Howson,Norwich,12,Midfielder,49,1,4.6,5.6
+340,341,Christian,Eriksen,Spurs,14,Midfielder,83,3,2.3625,5.3625
+191,192,Jordon,Ibe,Liverpool,8,Midfielder,45,1,4.21590909091,5.21590909091
+221,222,Sergio,Agüero,Man City,9,Forward,133,6,3.05,9.05
+249,250,Wayne,Rooney,Man Utd,10,Forward,100,5,3.2,8.2
+169,170,Jamie,Vardy,Leicester,7,Forward,72,2,5.2,7.2
+349,350,Harry,Kane,Spurs,14,Forward,100,2,4.15,6.15
+483,484,Enner,Valencia,West Ham,20,Forward,58,1,4.65,5.65
+173,174,Shinji,Okazaki,Leicester,7,Forward,56,2,1.95,3.95
+391,392,Jermain,Defoe,Sunderland,16,Forward,52,6,-2.2,3.8
+97,98,Diego,Da Silva Costa,Chelsea,4,Forward,106,9,-5.45,3.55
+170,171,Leonardo,Ulloa,Leicester,7,Forward,52,1,2.2,3.2
+25,26,Olivier,Giroud,Arsenal,1,Forward,92,5,-2.1,2.9

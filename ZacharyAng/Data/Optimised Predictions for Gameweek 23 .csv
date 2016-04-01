@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",54,55,"Artur","Boruc","Bournemouth",3,"Goalkeeper",45,3,3.925,6.925,1,0,0,0,4.5
+"2",352,353,"Jack","Butland","Stoke",15,"Goalkeeper",52,1,5.3681547619,6.3681547619,1,0,0,0,5.2
+"6",154,155,"Christian","Fuchs","Leicester",7,"Defender",47,8,6.95,14.95,0,1,0,0,4.7
+"7",79,80,"César","Azpilicueta","Chelsea",4,"Defender",57,6,6.375,12.375,0,1,0,0,5.7
+"8",60,61,"Adam","Smith","Bournemouth",3,"Defender",41,2,8.95,10.95,0,1,0,0,4.1
+"9",301,302,"Jose","Fonte","Southampton",13,"Defender",53,7,3.425,10.425,0,1,0,0,5.3
+"10",378,379,"Patrick","van Aanholt","Sunderland",16,"Defender",46,9,-0.7,8.3,0,1,0,0,4.6
+"16",457,458,"Claudio","Yacob","West Brom",19,"Midfielder",44,3,4.39375,7.39375,0,0,1,0,4.4
+"17",114,115,"Mile","Jedinak","Crystal Palace",5,"Midfielder",46,0,7.35,7.35,0,0,1,0,4.6
+"18",18,19,"Alex","Oxlade-Chamberlain","Arsenal",1,"Midfielder",55,1,6.25,7.25,0,0,1,0,5.5
+"19",456,457,"Chris","Brunt","West Brom",19,"Midfielder",52,0,7.05769230769,7.05769230769,0,0,1,0,5.2
+"20",238,239,"Marouane","Fellaini","Man Utd",10,"Midfielder",62,1,5.95,6.95,0,0,1,0,6.2
+"26",418,419,"Modou","Barrow","Swansea",17,"Forward",43,0,7.8,7.8,0,0,0,1,4.3
+"27",349,350,"Harry","Kane","Spurs",14,"Forward",99,5,1,6,0,0,0,1,9.9
+"28",249,250,"Wayne","Rooney","Man Utd",10,"Forward",99,2,3.7,5.7,0,0,0,1,9.9

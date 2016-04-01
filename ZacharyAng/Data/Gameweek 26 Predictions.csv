@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+204,205,Joe,Hart,Man City,9,Goalkeeper,55,1,4.33409090909,5.33409090909
+297,298,Fraser,Forster,Southampton,13,Goalkeeper,48,6,-0.756944444444,5.24305555556
+225,226,David,de Gea,Man Utd,10,Goalkeeper,56,0,4.74806547619,4.74806547619
+322,323,Hugo,Lloris,Spurs,14,Goalkeeper,52,3,1.59837662338,4.59837662338
+487,488,Mark,Bunn,Aston Villa,2,Goalkeeper,43,0,4.40432900433,4.40432900433
+448,449,Joleon,Lescott,Aston Villa,2,Defender,46,-1,13.4,12.4
+161,162,Robert,Huth,Leicester,7,Defender,43,1,9.9,10.9
+301,302,Jose,Fonte,Southampton,13,Defender,53,7,0.65,7.65
+300,301,Ryan,Bertrand,Southampton,13,Defender,53,6,1.1,7.1
+333,334,Kieran,Trippier,Spurs,14,Defender,49,0,6.5,6.5
+35,36,Aly,Cissokho,Aston Villa,2,Defender,45,-1,7.10294117647,6.10294117647
+31,32,Leandro,Bacuna,Aston Villa,2,Defender,47,-1,6.81294117647,5.81294117647
+38,39,Jores,Okore,Aston Villa,2,Defender,44,-1,6.81294117647,5.81294117647
+306,307,Cédric,Soares,Southampton,13,Defender,48,1,4.78571428571,5.78571428571
+494,495,Matteo,Darmian,Man Utd,10,Defender,54,1,4.40079365079,5.40079365079
+162,163,Riyad,Mahrez,Leicester,7,Midfielder,71,1,9.05,10.05
+313,314,Sadio,Mané,Southampton,13,Midfielder,74,0,9.7,9.7
+197,198,Roberto,Firmino,Liverpool,8,Midfielder,80,6,2.95,8.95
+406,407,Gylfi,Sigurdsson,Swansea,17,Midfielder,70,2,6.0,8.0
+264,265,Jack,Colback,Newcastle,11,Midfielder,52,4,1.12058823529,5.12058823529
+308,309,Steven,Davis,Southampton,13,Midfielder,48,3,1.7,4.7
+507,508,Jordy,Clasie,Southampton,13,Midfielder,52,2,2.56216666667,4.56216666667
+529,530,Jordan,Veretout,Aston Villa,2,Midfielder,56,1,3.24761904762,4.24761904762
+537,538,N'Golo,Kanté,Leicester,7,Midfielder,50,1,3.22083333333,4.22083333333
+388,389,Adam,Johnson,Sunderland,16,Midfielder,58,0,4.0506611356,4.0506611356
+391,392,Jermain,Defoe,Sunderland,16,Forward,52,2,4.0,6.0
+441,442,Odion,Ighalo,Watford,18,Forward,64,2,3.15,5.15
+440,441,Troy,Deeney,Watford,18,Forward,52,13,-8.25,4.75
+249,250,Wayne,Rooney,Man Utd,10,Forward,100,1,3.15,4.15
+317,318,Shane,Long,Southampton,13,Forward,57,6,-1.9,4.1
+221,222,Sergio,Agüero,Man City,9,Forward,135,2,1.9,3.9
+97,98,Diego,Da Silva Costa,Chelsea,4,Forward,106,9,-5.25,3.75
+483,484,Enner,Valencia,West Ham,20,Forward,58,2,1.65,3.65
+349,350,Harry,Kane,Spurs,14,Forward,100,6,-2.7,3.3
+169,170,Jamie,Vardy,Leicester,7,Forward,72,7,-3.9,3.1

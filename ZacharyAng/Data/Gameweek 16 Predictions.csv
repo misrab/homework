@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+205,206,Willy,Caballero,Man City,9,Goalkeeper,48,0,6.96666666667,6.96666666667
+225,226,David,de Gea,Man Utd,10,Goalkeeper,56,2,3.65333333333,5.65333333333
+352,353,Jack,Butland,Stoke,15,Goalkeeper,48,11,-5.83416666667,5.16583333333
+374,375,Costel,Pantilimon,Watford,18,Goalkeeper,48,4,0.693214285714,4.69321428571
+351,352,Asmir,Begovic,Chelsea,4,Goalkeeper,50,0,4.52583333333,4.52583333333
+210,211,Martín,Demichelis,Man City,9,Defender,53,0,5.95,5.95
+360,361,Philipp,Wollscheid,Stoke,15,Defender,44,8,-2.18416666667,5.81583333333
+498,499,Glen,Johnson,Stoke,15,Defender,50,7,-1.28047208539,5.71952791461
+103,104,Scott,Dann,Crystal Palace,5,Defender,52,6,-0.291749644381,5.70825035562
+206,207,Aleksandar,Kolarov,Man City,9,Defender,63,0,5.29089068826,5.29089068826
+468,469,Winston,Reid,West Ham,20,Defender,50,0,5.2552183908,5.2552183908
+381,382,Sebastián,Coates,Sunderland,16,Defender,42,2,2.80684684685,4.80684684685
+257,258,Paul,Dummett,Newcastle,11,Defender,43,2,2.74603890363,4.74603890363
+400,401,Kyle,Bartley,Swansea,17,Defender,43,0,4.66086956522,4.66086956522
+325,326,Younes,Kaboul,Sunderland,16,Defender,43,0,4.65491253,4.65491253
+137,138,Ross,Barkley,Everton,6,Midfielder,70,2,11.35,13.35
+367,368,Marko,Arnautovic,Stoke,15,Midfielder,60,3,9.29444444444,12.2944444444
+14,15,Mesut,Özil,Arsenal,1,Midfielder,92,6,6.25,12.25
+543,544,Yann,M'Vila,Sunderland,16,Midfielder,50,2,6.5,8.5
+237,238,Juan,Mata,Man Utd,10,Midfielder,88,2,5.02601787102,7.02601787102
+190,191,Philippe,Coutinho,Liverpool,8,Midfielder,84,2,4.25,6.25
+162,163,Riyad,Mahrez,Leicester,7,Midfielder,67,13,-7.04333333333,5.95666666667
+537,538,N'Golo,Kanté,Leicester,7,Midfielder,50,2,3.9,5.9
+526,527,Robbie,Brady,Norwich,12,Midfielder,54,2,3.65,5.65
+13,14,Theo,Walcott,Arsenal,1,Midfielder,83,6,-0.46,5.54
+440,441,Troy,Deeney,Watford,18,Forward,51,2,5.3,7.3
+349,350,Harry,Kane,Spurs,14,Forward,96,2,3.9,5.9
+441,442,Odion,Ighalo,Watford,18,Forward,57,7,-1.5,5.5
+148,149,Romelu,Lukaku,Everton,6,Forward,89,9,-4.0,5.0
+150,151,Arouna,Koné,Everton,6,Forward,49,2,2.85,4.85
+169,170,Jamie,Vardy,Leicester,7,Forward,75,7,-2.65,4.35
+50,51,Christian,Benteke,Liverpool,8,Forward,83,2,0.45625,2.45625
+461,462,Saido,Berahino,West Brom,19,Forward,61,0,2.4,2.4
+25,26,Olivier,Giroud,Arsenal,1,Forward,89,6,-3.6,2.4
+390,391,Connor,Wickham,Crystal Palace,5,Forward,55,2,0.336805555556,2.33680555556

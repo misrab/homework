@@ -1,0 +1,752 @@
+(1-(5/12)^2-(7/12)^2)*(0.5)+(1-(5/13)^2-(8/13)^2)*0.5
+setwd("/Users/zachang/Desktop/Data Science Course/homework/ZacharyAng/Project")#
+#load libraries#
+library(lpSolve)#
+library(stringr)#
+#
+# Read the Data in ## #
+#
+df = read.csv("Gameweek 7 Predictions.csv",header=T)
+setwd("Users/zachang/Desktop/Data Science Course/homework/ZacharyAng/Project")
+setwd("/Users/zachang/Desktop/Data_Science_Course/homework/ZacharyAng/Project")#
+#load libraries#
+library(lpSolve)#
+library(stringr)#
+#
+# Read the Data in ## #
+#
+df = read.csv("Gameweek 7 Predictions.csv",header=T)
+#Create the constraints#
+num_gk = 2#
+num_def = 5#
+num_mid = 5#
+num_fwd = 3#
+max_cost = 100#
+# Create vectors to constrain by position#
+df$Goalkeeper = ifelse(df$type_name == "Goalkeeper", 1, 0)#
+df$Defender = ifelse(df$type_name == "Defender", 1, 0)#
+df$Midfielder = ifelse(df$type_name == "Midfielder", 1, 0)#
+df$Forward = ifelse(df$type_name == "Forward", 1, 0)#
+# Create vector to constrain by max number of players allowed per team#
+team_constraint = unlist(lapply(unique(df$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=df))#
+df$cost_t1m = df$cost_t1/10#
+# next we need the constraint directions#
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name))))#
+#
+# The vector to optimize against#
+objective = df$predictions#
+#
+# Put the complete matrix together#
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print(arrange(df[which(x$solution==1),], desc(Goalkeeper), desc(Defender), desc(Midfielder), desc(Forward), desc(predictions)))
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name))))
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))
+const_dir
+objective = df$predictions
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print(arrange(df[which(x$solution==1),], desc(Goalkeeper), desc(Defender), desc(Midfielder), desc(Forward), desc(predictions)))
+library(plyr)
+print(arrange(df[which(x$solution==1),], desc(Goalkeeper), desc(Defender), desc(Midfielder), desc(Forward), desc(predictions)))
+x$solution==1
+df[x$solution==1]
+df[which(x$solution==1)]
+df[which(x$solution==1),]
+df[which(x$solution==1),]$Goalkeeper
+length(df[which(x$solution==1),]$Goalkeeper)
+newdf=df[which(x$solution==1)]#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, newdf=newdf))
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, newdf=newdf))
+newdf=df[which(x$solution==1),]
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, newdf=newdf))
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, df=newdf))
+team_constraint.new
+const_dir<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(lenght(unique(newdf$team_name)))))
+const_dir<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Midfielder, newdf$Forward, team_constraint),#
+nrow=(4 + length(unique(df$team_name))),#
+byrow=TRUE)
+x,y=1,5
+x & y
+const_rhs = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))
+const_rhs
+newobjective=newobjective$predictions
+newobjective=newdf$predictions
+newdf$predictions
+y = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, df=newdf))#
+const_dir.new<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))#
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Midfielder, newdf$Forward, team_constraint),#
+nrow=(4 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))#
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+#Create the constraints#
+num_gk = 2#
+num_def = 5#
+num_mid = 5#
+num_fwd = 3#
+max_cost = 100#
+# Create vectors to constrain by position#
+df$Goalkeeper = ifelse(df$type_name == "Goalkeeper", 1, 0)#
+df$Defender = ifelse(df$type_name == "Defender", 1, 0)#
+df$Midfielder = ifelse(df$type_name == "Midfielder", 1, 0)#
+df$Forward = ifelse(df$type_name == "Forward", 1, 0)#
+# Create vector to constrain by max number of players allowed per team#
+team_constraint = unlist(lapply(unique(df$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=df))#
+df$cost_t1m = df$cost_t1/10#
+# next we need the constraint directions#
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name))))#
+#
+# The vector to optimize against#
+objective = df$predictions#
+#
+# Put the complete matrix together#
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print(arrange(df[which(x$solution==1),], desc(Goalkeeper), desc(Defender), desc(Midfielder), desc(Forward), desc(predictions)))
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name))))
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))
+objective = df$predictions
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print(arrange(df[which(x$solution==1),], desc(Goalkeeper), desc(Defender), desc(Midfielder), desc(Forward), desc(predictions)))
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, df=newdf))#
+const_dir.new<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))#
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Midfielder, newdf$Forward, team_constraint),#
+nrow=(4 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))#
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, df=newdf))#
+const_dir.new<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))#
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Midfielder, newdf$Forward, team_constraint.new),#
+nrow=(4 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))#
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+nrow=(4 + length(unique(newdf$team_name))),
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(newdf$team_name==x, 1, 0)#
+}, df=newdf))#
+const_dir.new<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))#
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Midfielder, newdf$Forward, team_constraint.new),#
+nrow=(4 + length(unique(newdf$team_name))),#
+byrow=TRUE)#
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))#
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=newdf))
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=newdf))#
+const_dir.new<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))#
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Midfielder, newdf$Forward, team_constraint.new),#
+nrow=(4 + length(unique(newdf$team_name))),#
+byrow=TRUE)#
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))#
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+y$solution
+length(y$solution)
+sum(y$solution)
+lp
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=newdf))#
+const_dir.new<-c("=","=","=",rep("<=",(length(unique(newdf$team_name)))))#
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Defender, newdf$Midfielder, newdf$Midfielder, newdf$Forward, newdf$Forward, team_constraint.new),#
+nrow=(4 + length(unique(newdf$team_name))),#
+byrow=TRUE)#
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))#
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+const_dir.new<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.low = 3#
+num_def.up = 5 #
+num_mid.low = 3#
+num_mid.up = 5#
+num_fwd.low=1#
+num_fwd.up=3#
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=newdf))#
+const_dir.new<-c("=",">=","<=",">=","<=",">=","<=",rep("<=",(length(unique(newdf$team_name)))))#
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Defender, newdf$Midfielder, newdf$Midfielder, newdf$Forward, newdf$Forward, team_constraint.new),#
+nrow=(4 + length(unique(newdf$team_name))),#
+byrow=TRUE)#
+const_rhs.new = c(num_gk.new, num_def.low, num_def.up, num_mid.low, num_mid.up, num_fwd.low, num_fwd.up, rep(3, length(unique(newdf$team_name))))#
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+const_mat.new
+team_constraint.new = unlist(lapply(unique(newdf$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=newdf))
+const_dir.new<-c("=","=","=",rep("<=",(length(unique(newdf$team_name)))))
+nrow=(4 + length(unique(newdf$team_name))),
+const_mat.new = matrix(c(newdf$Goalkeeper, newdf$Defender, newdf$Midfielder, newdf$Forward, team_constraint.new),#
+nrow=(4 + length(unique(newdf$team_name))),#
+byrow=TRUE)
+const_rhs.new = c(num_gk.new, num_def.new, num_mid.new, num_fwd.new, num_mid.up, rep(3, length(unique(newdf$team_name))))
+newdf=df[which(x$solution==1),]#
+newobjective=newdf$predictions#
+num_gk.new = 1#
+num_def.new = 3#
+num_mid.new = 4 #
+num_fwd.new = 3
+const_rhs.new = c(num_gk.new, num_def.new, num_mid.new, num_fwd.new, num_mid.up, rep(3, length(unique(newdf$team_name))))
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+y$solution
+const_mat.new
+const_rhs.new
+const_rhs.new = c(num_gk.new, num_def.new, num_mid.new, num_fwd.new,rep(3, length(unique(newdf$team_name))))
+const_rhs.new
+nrow(const_mat.new)
+length(const_rhs.new)
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+unique(newdf$team_name)
+newdf
+length(unique(newdf$team_name))
+team_constraint.new
+length(newdf$Goalkeeper)
+newdf$Goalkeeper
+team_constraint.new
+length(team_constraint.new)/15
+const_mat.new
+const_dir.new<-c("=","=","=","=",rep("<=",(length(unique(newdf$team_name)))))
+y = lp ("max", newobjective, const_mat.new, const_dir.new, const_rhs.new, all.bin=TRUE, all.int=TRUE)
+y$solution
+newdf[which(y$solution),]
+newdf[which(y$solution==1),]
+paste("Gameweek", 7, "Predictions")
+paste("Gameweek",7, "Predictions")
+8:26
+for i in 8:26 print i
+for i in 8:26: print i
+for (i in 8:26) print i
+for (i in 8:26) {print i}
+for (i in 8:25){ i+1}
+i
+for (i in 8:25){ print(i)}
+z<-list()
+for (i in 1:3) {z$i<-i+1}
+names(z)
+z$i
+predicted.team= df[which(x$solution==1),]
+predicted.team
+predicted.team$actual
+which(predicted.team$actual==max(predicted.team$actual))
+predicted.team$actual[which(predicted.team$actual==max(predicted.team$actual))]
+predicted.team$actual[which(predicted.team$actual==max(predicted.team$actual))]*2
+z
+z= c()
+z
+apppend(z,1)
+append(z,1)
+z
+z=c(1,2)
+append(z,1)
+pred_df= df[which(x$solution==1),]
+pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[which(pred_df$actual==max(pred_df$actual))]*2
+pred_df
+pred_df$actual
+sum(pred_df$actual)
+z<-c()
+fantasy_scores<-append(z,pred_df$actual)
+fantasy_scores
+fantasy_scores<-append(z,sum(pred_df$actual))
+fantasy_scores
+fantasy_scores<-append(z,sum(pred_df$actual))
+fantasy_scores
+fantasy_scores<-c()
+fantasy_scores<-append(fantasy_scores,sum(pred_df$actual))
+fantasy_scores
+fantasy_scores<-append(fantasy_scores,sum(pred_df$actual))
+fantasy_scores
+fantasy_scores<-append(fantasy_scores,sum(pred_df$actual))
+"Gameweek",i,"Predictions.csv"
+paste("Gameweek",i,"Predictions.csv")
+fantasy_scores=c()#
+for (i in 8:26){#
+df = read.csv(paste("Gameweek",i,"Predictions.csv"),header=T)#
+#Create the constraints#
+num_gk = 2#
+num_def = 5#
+num_mid = 5#
+num_fwd = 3#
+max_cost = 100#
+# Create vectors to constrain by position#
+df$Goalkeeper = ifelse(df$type_name == "Goalkeeper", 1, 0)#
+df$Defender = ifelse(df$type_name == "Defender", 1, 0)#
+df$Midfielder = ifelse(df$type_name == "Midfielder", 1, 0)#
+df$Forward = ifelse(df$type_name == "Forward", 1, 0)#
+# Create vector to constrain by max number of players allowed per team#
+team_constraint = unlist(lapply(unique(df$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=df))#
+df$cost_t1m = df$cost_t1/10#
+# next we need the constraint directions#
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))#
+#
+# The vector to optimize against#
+objective = df$predictions#
+#
+# Put the complete matrix together#
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+pred_df= df[which(x$solution==1),]#
+#
+pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[which(pred_df$actual==max(pred_df$actual))]*2#
+fantasy_scores<-append(z,sum(pred_df$actual))#
+}
+fantasy_scores
+df
+x
+pred_df
+for (i in 8:26){#
+df = read.csv(paste("Gameweek",i,"Predictions.csv"),header=T)#
+#Create the constraints#
+num_gk = 2#
+num_def = 5#
+num_mid = 5#
+num_fwd = 3#
+max_cost = 100#
+# Create vectors to constrain by position#
+df$Goalkeeper = ifelse(df$type_name == "Goalkeeper", 1, 0)#
+df$Defender = ifelse(df$type_name == "Defender", 1, 0)#
+df$Midfielder = ifelse(df$type_name == "Midfielder", 1, 0)#
+df$Forward = ifelse(df$type_name == "Forward", 1, 0)#
+# Create vector to constrain by max number of players allowed per team#
+team_constraint = unlist(lapply(unique(df$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=df))#
+df$cost_t1m = df$cost_t1/10#
+# next we need the constraint directions#
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))#
+#
+# The vector to optimize against#
+objective = df$predictions#
+#
+# Put the complete matrix together#
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print x#
+#
+pred_df= df[which(x$solution==1),]#
+#
+pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[which(pred_df$actual==max(pred_df$actual))]*2#
+fantasy_scores<-append(z,sum(pred_df$actual))#
+}
+fantasy_scores=c()#
+for (i in 8:26){#
+df = read.csv(paste("Gameweek",i,"Predictions.csv"),header=T)#
+#Create the constraints#
+num_gk = 2#
+num_def = 5#
+num_mid = 5#
+num_fwd = 3#
+max_cost = 100#
+# Create vectors to constrain by position#
+df$Goalkeeper = ifelse(df$type_name == "Goalkeeper", 1, 0)#
+df$Defender = ifelse(df$type_name == "Defender", 1, 0)#
+df$Midfielder = ifelse(df$type_name == "Midfielder", 1, 0)#
+df$Forward = ifelse(df$type_name == "Forward", 1, 0)#
+# Create vector to constrain by max number of players allowed per team#
+team_constraint = unlist(lapply(unique(df$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=df))#
+df$cost_t1m = df$cost_t1/10#
+# next we need the constraint directions#
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))#
+#
+# The vector to optimize against#
+objective = df$predictions#
+#
+# Put the complete matrix together#
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print(x)#
+#
+pred_df= df[which(x$solution==1),]#
+#
+pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[which(pred_df$actual==max(pred_df$actual))]*2#
+fantasy_scores<-append(z,sum(pred_df$actual))#
+}
+fantasy_scores=c()#
+for (i in 8:26){#
+df = read.csv(paste("Gameweek",i,"Predictions.csv"),header=T)#
+#Create the constraints#
+num_gk = 2#
+num_def = 5#
+num_mid = 5#
+num_fwd = 3#
+max_cost = 100#
+# Create vectors to constrain by position#
+df$Goalkeeper = ifelse(df$type_name == "Goalkeeper", 1, 0)#
+df$Defender = ifelse(df$type_name == "Defender", 1, 0)#
+df$Midfielder = ifelse(df$type_name == "Midfielder", 1, 0)#
+df$Forward = ifelse(df$type_name == "Forward", 1, 0)#
+# Create vector to constrain by max number of players allowed per team#
+team_constraint = unlist(lapply(unique(df$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=df))#
+df$cost_t1m = df$cost_t1/10#
+# next we need the constraint directions#
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))#
+#
+# The vector to optimize against#
+objective = df$predictions#
+#
+# Put the complete matrix together#
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print(x)#
+#
+pred_df= df[which(x$solution==1),]#
+#
+pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[which(pred_df$actual==max(pred_df$actual))]*2#
+fantasy_scores<-append(fantasy_scores,sum(pred_df$actual))#
+}
+fantasy_scores
+library(httr)
+url<- "http://fantasy.premierleague.com/entry/1328961/event-history/8/"#
+url.dat<-GET(url)
+names(url.dat)
+library(rjson)
+url.dat$headers
+url.dat$content
+names(url.dat)
+url.dat$handle
+my_own_scores=c(91,69,43,52,40,74,43,62,73,71,40,75,43,25,69,41,63,38,55)#
+average_scores=c(55,51,42,56,45,55,51,51,51,59,44,57,40,35,46,43,60,55,41)
+fantasy_scores
+cumsum(my_own_scores)
+plot(8:26, cumsum(my_own_scores))
+plot(8:26, cumsum(my_own_scores),type= "l")
+plot(8:26, cumsum(my_own_scores),type= "l", lwd=5)
+plot(8:26, cumsum(my_own_scores),type= "l", lwd=5,col="blue")
+lines(cumsum(average_scores),lwd=5,col="red")
+?lines
+lines(8:26,cumsum(average_scores),lwd=5,col="red")
+plot(8:26, cumsum(my_own_scores),type= "l", lwd=5,col="blue")#
+lines(8:26,cumsum(average_scores),lwd=5,col="red")
+lines(8:26,cumsum(fantasy_scores),lwd=5,col="green")
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xaxt="n",xlab="Gameweek",ylab="Cumulative Fantasy Scores")#
+lines(8:26,cumsum(average_scores),lwd=3,col="red")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",bty="n",xlab="Gameweek",ylab="Cumulative Fantasy Scores")
+?legend
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",title="Fantasy Scores from Gameweek 8 to Gameweek 26")
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26")
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",font="Verdana")
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26")
+?legend
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(0,1500),xlim=c(5,35))
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(0,1500),xlim=c(5,30))
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(50,1500),xlim=c(5,30))
+plot(8:26, cumsum(fantasy_scores),type= "l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+library(ggplot2)
+library(ggplot)
+library(ggplot2)
+library(gtable)
+library(ggplot2)
+library(scales)
+library(ggplot2)
+?qplot
+qplot(8:26, scores,geom="line", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+scores<-rbind(cumsum(fantasy_scores),cumsum(my_own_scores),cumsum(average_scores))
+qplot(8:26, scores,geom="line", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+plot(8:26, scores,type="l", lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+scores<-data.frame(cumsum(fantasy_scores),cumsum(my_own_scores),cumsum(average_scores))
+scores
+qplot(8:26, data=scores, lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+qplot(8:26, data=scores, lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+?data.frame
+scores<-data.frame(cumsum(fantasy_scores),cumsum(my_own_scores),cumsum(average_scores),row.names=c("Predicted Score","My Own Score","Average Scores"))
+qplot(8:26, data=scores,xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+names(scores)
+scores
+scores<-data.frame(cumsum(fantasy_scores),cumsum(my_own_scores),cumsum(average_scores),row.names=8:26)
+scores
+qplot(y=scores,data=scores,xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+qplot(8:26,data=scores,xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+legend(x=28,y=1400,c("Green"))
+?legend
+par(mfrow = c(2, 2))#
+for(ll in c("","x","y","xy")) {#
+  plot(2:10, log = ll, main = paste0("log = '", ll, "'"))#
+  abline(1, 1)#
+  lines(2:3, 3:4, col = 2)#
+  points(2, 2, col = 3)#
+  rect(2, 3, 3, 2, col = 4)#
+  text(c(3,3), 2:3, c("rect(2,3,3,2, col=4)",#
+                      "text(c(3,3),2:3,\"c(rect(...)\")"), adj = c(0, 0.3))#
+  legend(list(x = 2,y = 8), legend = leg.txt, col = 2:3, pch = 1:2,#
+         lty = 1, merge = TRUE)   #, trace = TRUE)#
+}#
+par(mfrow = c(1,1))
+x <- seq(-pi, pi, len = 65)#
+plot(x, sin(x), type = "l", col = 2, xlab = expression(phi),#
+     ylab = expression(f(phi)))#
+abline(h = -1:1, v = pi/2*(-6:6), col = "gray90")#
+lines(x, cos(x), col = 3, lty = 2)#
+ex.cs1 <- expression(plain(sin) * phi,  paste("cos", phi))  # 2 ways#
+utils::str(legend(-3, .9, ex.cs1, lty = 1:2, plot = FALSE,#
+           adj = c(0, 0.6)))  # adj y !#
+legend(-3, 0.9, ex.cs1, lty = 1:2, col = 2:3,  adj = c(0, 0.6))
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green80",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,30))
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=26,y=1200,legend=c("My"))
+legend(x=27,y=1200,legend=c("My"))
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My"))
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"))
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"))
+?legend
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,cex=0.5)
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,cex=0.5
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,cex=0.5)
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,cex=0.75)
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,lty=1,cex=0.75)
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,lty=1,cex=0.65)
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1500),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,lty=1,cex=0.65)
+plot(8:26,cumsum(fantasy_scores),type="l",lwd=3,col="green",xlab="Gameweek",ylab="Cumulative Fantasy Scores",main="Fantasy Scores from Gameweek 8 to Gameweek 26",ylim=c(100,1400),xlim=c(5,34))#
+lines(8:26,cumsum(average_scores),lwd=3,col="magenta")#
+lines(8:26,cumsum(my_own_scores),lwd=3,col="blue")#
+legend(x=27,y=1200,legend=c("My Predictions","My Actual Scores","Average Scores"),col=c("green","blue","magenta"),xjust=0,lty=1,cex=0.65)
+scores
+1290-1067
+1574+223
+write.csv(pred_df,file=paste("Optimised Predictions for Gameweek",8,".csv"))
+fantasy_scores=c()#
+for (i in 8:26){#
+df = read.csv(paste("Gameweek",i,"Predictions.csv"),header=T)#
+#Create the constraints#
+num_gk = 2#
+num_def = 5#
+num_mid = 5#
+num_fwd = 3#
+max_cost = 100#
+# Create vectors to constrain by position#
+df$Goalkeeper = ifelse(df$type_name == "Goalkeeper", 1, 0)#
+df$Defender = ifelse(df$type_name == "Defender", 1, 0)#
+df$Midfielder = ifelse(df$type_name == "Midfielder", 1, 0)#
+df$Forward = ifelse(df$type_name == "Forward", 1, 0)#
+# Create vector to constrain by max number of players allowed per team#
+team_constraint = unlist(lapply(unique(df$team_name), function(x, df){#
+ifelse(df$team_name==x, 1, 0)#
+}, df=df))#
+df$cost_t1m = df$cost_t1/10#
+# next we need the constraint directions#
+const_dir <- c("=", "=", "=", "=", rep("<=", (1+length(unique(df$team_name)))))#
+#
+# The vector to optimize against#
+objective = df$predictions#
+#
+# Put the complete matrix together#
+const_mat = matrix(c(df$Goalkeeper, df$Defender, df$Midfielder, df$Forward,#
+df$cost_t1m, team_constraint),#
+nrow=(5 + length(unique(df$team_name))),#
+byrow=TRUE)#
+const_rhs = c(num_gk, num_def, num_mid, num_fwd, max_cost, rep(3, length(unique(df$team_name))))#
+# And solve the linear system#
+x = lp ("max", objective, const_mat, const_dir, const_rhs, all.bin=TRUE, all.int=TRUE)#
+print(x)#
+#
+pred_df= df[which(x$solution==1),]#
+write.csv(pred_df,file=paste("Optimised Predictions for Gameweek",i,".csv"))#
+pred_df$actual[which(pred_df$actual==max(pred_df$actual))] = pred_df$actual[which(pred_df$actual==max(pred_df$actual))]*2#
+fantasy_scores<-append(fantasy_scores,sum(pred_df$actual))#
+}
+length(8:26)
+Indmat=c()#
+for (i in 8:26){#
+	df1=read.csv(paste("Gameweek",i,"Predictions.csv"),header=T)#
+	df2=read.csv(paste("Gameweek",i+1,"Predictions.csv"),header=T)#
+	Indmat=append(Indmat,df1$id==df2$id)#
+}#
+Indmat=matrix(Indmat,nrow=19,byrow=T)
+df1
+Indmat=c()#
+for (i in 8:26){#
+	df1=read.csv(paste("Optimised Predictions for Gameweek",i,".csv"),header=T)#
+	df2=read.csv(paste("Optimised Predictions for Gameweek",i,".csv"),header=T)#
+	Indmat=append(Indmat,df1$id==df2$id)#
+}#
+Indmat=matrix(Indmat,nrow=19,byrow=T)#
+# Evaluating my results
+Indmat
+df1$id
+df2$id
+Indmat=c()#
+for (i in 8:26){#
+	df1=read.csv(paste("Optimised Predictions for Gameweek",i,".csv"),header=T)#
+	df2=read.csv(paste("Optimised Predictions for Gameweek",i+1,".csv"),header=T)#
+	Indmat=append(Indmat,df1$id==df2$id)#
+}#
+Indmat=matrix(Indmat,nrow=19,byrow=T)
+Indmat
+sum(Indmat)
+sum(Indmat[,])
+rowSums(Indmat)
+rowSums(-Indmat)
+rowSums(15-Indmat)
+15-rowSums(Indmat)
+(15-rowSums(Indmat))*4
+(14-rowSums(Indmat))*4
+sum((14-rowSums(Indmat))*4)

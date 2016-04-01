@@ -1,0 +1,36 @@
+,id,first_name,second_name,team_name,team_id,type_name,cost_t1,actual,errors,predictions
+351,352,Asmir,Begovic,Chelsea,4,Goalkeeper,50,0,4.74555555556,4.74555555556
+252,253,Robert,Elliot,Newcastle,11,Goalkeeper,40,5,-0.340833333333,4.65916666667
+352,353,Jack,Butland,Stoke,15,Goalkeeper,48,1,3.65770308123,4.65770308123
+464,465,Adrián,San Miguel del Castillo,West Ham,20,Goalkeeper,50,6,-1.4025,4.5975
+374,375,Costel,Pantilimon,Watford,18,Goalkeeper,48,1,3.40710784314,4.40710784314
+531,532,Chancel,Mbemba,Newcastle,11,Defender,49,2,5.6,7.6
+255,256,Fabricio,Coloccini,Newcastle,11,Defender,45,9,-1.6,7.4
+258,259,Daryl,Janmaat,Newcastle,11,Defender,49,2,5.2,7.2
+257,258,Paul,Dummett,Newcastle,11,Defender,43,1,6.1,7.1
+81,82,Kurt,Zouma,Chelsea,4,Defender,54,2,4.8,6.8
+498,499,Glen,Johnson,Stoke,15,Defender,50,1,5.28888888889,6.28888888889
+360,361,Philipp,Wollscheid,Stoke,15,Defender,44,1,4.88888888889,5.88888888889
+330,331,Eric,Dier,Spurs,14,Defender,52,6,-0.439957264957,5.56004273504
+354,355,Ryan,Shawcross,Stoke,15,Defender,48,1,4.23888888889,5.23888888889
+357,358,Erik,Pieters,Stoke,15,Defender,49,1,4.18888888889,5.18888888889
+162,163,Riyad,Mahrez,Leicester,7,Midfielder,68,15,-8.25,6.75
+14,15,Mesut,Özil,Arsenal,1,Midfielder,95,11,-5.15,5.85
+285,286,Wes,Hoolahan,Norwich,12,Midfielder,49,3,2.15625,5.15625
+481,482,Dimitri,Payet,West Ham,20,Midfielder,78,0,5.06945454545,5.06945454545
+71,72,Junior,Stanislas,Bournemouth,3,Midfielder,42,3,2.06666666667,5.06666666667
+367,368,Marko,Arnautovic,Stoke,15,Midfielder,60,2,3.0,5.0
+111,112,Yannick,Bolasie,Crystal Palace,5,Midfielder,61,2,2.65,4.65
+63,64,Matt,Ritchie,Bournemouth,3,Midfielder,56,2,2.59166666667,4.59166666667
+537,538,N'Golo,Kanté,Leicester,7,Midfielder,50,2,2.45,4.45
+147,148,Gerard,Deulofeu,Everton,6,Midfielder,63,2,2.44285714286,4.44285714286
+320,321,Graziano,Pellè,Southampton,13,Forward,82,2,4.83333333333,6.83333333333
+148,149,Romelu,Lukaku,Everton,6,Forward,90,6,0.0,6.0
+51,52,Gabriel,Agbonlahor,Aston Villa,2,Forward,47,0,5.1,5.1
+440,441,Troy,Deeney,Watford,18,Forward,51,5,-0.1,4.9
+150,151,Arouna,Koné,Everton,6,Forward,49,2,2.65,4.65
+392,393,Steven,Fletcher,Sunderland,16,Forward,50,0,4.41452991453,4.41452991453
+25,26,Olivier,Giroud,Arsenal,1,Forward,89,8,-3.65,4.35
+122,123,Glenn,Murray,Bournemouth,3,Forward,56,2,2.2125,4.2125
+169,170,Jamie,Vardy,Leicester,7,Forward,76,8,-4.15,3.85
+522,523,Jordan,Ayew,Aston Villa,2,Forward,55,8,-4.66111111111,3.33888888889

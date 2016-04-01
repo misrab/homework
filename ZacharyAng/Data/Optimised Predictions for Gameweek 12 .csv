@@ -1,0 +1,16 @@
+"","X","id","first_name","second_name","team_name","team_id","type_name","cost_t1","actual","errors","predictions","Goalkeeper","Defender","Midfielder","Forward","cost_t1m"
+"1",2,3,"Petr","Cech","Arsenal",1,"Goalkeeper",56,3,3.82291666667,6.82291666667,1,0,0,0,5.6
+"2",225,226,"David","de Gea","Man Utd",10,"Goalkeeper",55,6,-0.227083333333,5.77291666667,1,0,0,0,5.5
+"6",4,5,"Per","Mertesacker","Arsenal",1,"Defender",53,2,4.89172149123,6.89172149123,0,1,0,0,5.3
+"7",3,4,"Laurent","Koscielny","Arsenal",1,"Defender",59,2,4.71979166667,6.71979166667,0,1,0,0,5.9
+"8",154,155,"Christian","Fuchs","Leicester",7,"Defender",47,2,4.12088815789,6.12088815789,0,1,0,0,4.7
+"9",62,63,"Sylvain","Distin","Bournemouth",3,"Defender",43,2,3.81363636364,5.81363636364,0,1,0,0,4.3
+"10",357,358,"Erik","Pieters","Stoke",15,"Defender",49,6,-0.228070175439,5.77192982456,0,1,0,0,4.9
+"16",217,218,"Jesús","Navas","Man City",9,"Midfielder",64,3,6,9,0,0,1,0,6.4
+"17",243,244,"Ander","Herrera","Man Utd",10,"Midfielder",66,1,6.45,7.45,0,0,1,0,6.6
+"19",284,285,"Nathan","Redmond","Norwich",12,"Midfielder",56,0,6.85,6.85,0,0,1,0,5.6
+"20",308,309,"Steven","Davis","Southampton",13,"Midfielder",48,3,3.07102941176,6.07102941176,0,0,1,0,4.8
+"21",89,90,"Willian","Borges Da Silva","Chelsea",4,"Midfielder",68,2,3.69166666667,5.69166666667,0,0,1,0,6.8
+"26",221,222,"Sergio","Agüero","Man City",9,"Forward",131,0,15.384375,15.384375,0,0,0,1,13.1
+"27",223,224,"Wilfried","Bony","Man City",9,"Forward",83,1,13.9899305556,14.9899305556,0,0,0,1,8.3
+"28",320,321,"Graziano","Pellè","Southampton",13,"Forward",84,1,13.05,14.05,0,0,0,1,8.4
