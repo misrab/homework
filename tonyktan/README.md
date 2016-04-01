@@ -1,9 +1,9 @@
-# Data Science Project
+## Data Science Project
 
-## Saving Airbnb from Listing Saturation
+**Saving Airbnb from Listing Saturation**
 _Data-driven Boosting of New Host Listings_
 
-*Background*
+**Background**
 
 Founded in 2008, Airbnb has developed into a mature hospitality sharing economy company, providing short-term stays in homes around the world. With over 2 million listings in over 190 countries, Airbnb’s host base is maturing, with popular homes in every major city, validated by numerous 5-star ratings and positive reviews.
 
